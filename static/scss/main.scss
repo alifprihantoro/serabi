@@ -1,0 +1,13 @@
+@use "var" as v;
+@use "reset";
+@use "nav";
+@use "btn";
+@use "icon";
+.header {
+  h2,h3{
+    font-weight: bold;
+  }
+    padding: 15px;
+    line-height: 6px;
+    width: 62%;
+}

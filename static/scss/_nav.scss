@@ -1,0 +1,30 @@
+@use "var" as v;
+nav {
+  position: sticky;
+  display: flex;
+  top: 0;
+  left: 0;
+  padding: 0 15px;
+  width: 100%;
+  background: v.$bg;
+  height: 50px;
+  margin: -8px;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+.nav ul li {
+  margin: 0;
+  padding: 15px;
+}
+.nav {
+  padding: 0;
+  text-align: right;
+  position: fixed;
+  right: 50px;
+  top: 0;
+}
+.nav a:hover{
+  color:v.$c2;
+}
