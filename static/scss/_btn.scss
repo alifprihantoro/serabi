@@ -2,22 +2,19 @@
 .btn {
   // btn new
   a {
-    text-align: center;
-    margin: 15px;
-    width: 200px;
+    margin: 10px;
     height: 40px;
     display: block;
     line-height: 40px;
     font-size: 13px;
     font-weight: bold;
-    color: v.$c1;
-    border: 2px solid v.$c1;
+    border: 2px solid rgba(255,255,255,.8);
     letter-spacing: 2px;
     position: relative;
-    transition: all 0.5s;
+    transition: all .5s;
     cursor: pointer;
-  }
-
+    padding: 0 10px 0 35px;
+}
   a span {
     position: relative;
     z-index: 2;
@@ -44,4 +41,9 @@
     width: 100%;
   }
   display: flex;
+}
+.follow {
+  a{
+    // width: 50px;
+  }
 }
