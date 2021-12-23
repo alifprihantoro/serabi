@@ -1,5 +1,8 @@
 @use "var" as v;
 nav {
+  header{
+    margin-left: 15px;
+  }
   svg{
     width: 50px;
     height: 50px;
@@ -30,7 +33,7 @@ nav {
   left: 0;
   padding: 0 15px;
   width: 100%;
-  background: v.$bg;
+  background: v.$bgd;
   height: 50px;
   margin: -8px;
 }

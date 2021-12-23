@@ -1,27 +1,22 @@
 @use "var" as v;
 .btn {
   // btn new
-  a {
-    margin: 10px;
-    height: 40px;
-    display: block;
-    line-height: 40px;
-    font-size: 13px;
-    font-weight: bold;
-    border: 2px solid rgba(255,255,255,.8);
-    letter-spacing: 2px;
-    position: relative;
-    transition: all .5s;
-    cursor: pointer;
-    padding: 0 10px 0 35px;
+  svg {
+    position: absolute;
+    transform: translate(-25px, -33px);
+    fill: #fff;
+    z-index: 9;
+    width: 20px;
 }
-  a span {
+
+  a {
+   span {
     position: relative;
     z-index: 2;
-    font-weight: 500;
+    font-weight: bold;
+    text-transform: uppercase;
   }
-
-  a:after {
+  &:after {
     position: absolute;
     content: "";
     top: 0;
@@ -29,21 +24,39 @@
     width: 0;
     height: 100%;
     background-color: v.$bg2;
-    transition: all 1s;
+    transition: all .5s;
     z-index: 0;
   }
-
-  a:hover {
-    color: v.$c1;
+&:hover{
+  svg{
+    fill: v.$bg;
   }
-
-  a:hover:after {
+  span{
+    color: v.$bg;
+  }
+&:after {
     width: 100%;
   }
+
+    border-color: v.$bgd;
+  }
+
+ margin: 10px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    font-size: 13px;
+    font-weight: bold;
+    border: 2px solid v.$c1;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all .5s;
+    cursor: pointer;
+    padding: 0 10px 0 35px;
+}
+
   display: flex;
 }
-.follow {
-  a{
-    // width: 50px;
-  }
+.follow svg {
+    transform: translate(-23px, 6px) !important;
 }
