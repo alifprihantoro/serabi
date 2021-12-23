@@ -1,5 +1,29 @@
 @use "var" as v;
 nav {
+  svg{
+    width: 50px;
+    height: 50px;
+    fill: #fff;
+  }
+  .nav {
+    ul {
+      display: flex;
+      list-style: none;
+    }
+    ul li {
+      margin: 0;
+      padding: 15px;
+    }
+    a:hover {
+      color: v.$c2;
+    }
+    padding: 0;
+    text-align: right;
+    position: fixed;
+    right: 50px;
+    top: 0;
+  }
+
   position: sticky;
   display: flex;
   top: 0;
@@ -9,22 +33,4 @@ nav {
   background: v.$bg;
   height: 50px;
   margin: -8px;
-}
-.nav ul {
-  display: flex;
-  list-style: none;
-}
-.nav ul li {
-  margin: 0;
-  padding: 15px;
-}
-.nav {
-  padding: 0;
-  text-align: right;
-  position: fixed;
-  right: 50px;
-  top: 0;
-}
-.nav a:hover{
-  color:v.$c2;
 }
