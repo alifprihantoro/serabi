@@ -2,12 +2,15 @@
 @media only screen and (max-width: 720px) {
   nav {
     svg {
+      fill: v.$c1;
       width: 25px;
       height: 25px;
+      display: unset;
     }
     li {
       margin: auto !important;
     }
+    width: 100%;
     position: fixed;
     top: unset;
     bottom: 0 ;
@@ -15,12 +18,6 @@
     width: 100%;
     background: v.$bgd;
     text-align: center;
-  animation-name: nav;
-  animation-duration: 1s;  
-  animation-fill-mode: both;
+  animation-name: up;
   }
-@keyframes nav {
-  from {transform: translate(0,999px)}
-  to {transform: translate(0,0)}
-}
 }

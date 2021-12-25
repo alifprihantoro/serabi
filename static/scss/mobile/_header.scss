@@ -9,12 +9,8 @@
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgb(0 0 0 / 20%);
     margin: 25px auto;
-  animation-name: header;
+  animation-name: left;
   animation-duration: 1s;  
   animation-fill-mode: both;
   }
-@keyframes header {
-  from {transform: translate(-999px,0)}
-  to {transform: translate(0,0)}
-}
 }

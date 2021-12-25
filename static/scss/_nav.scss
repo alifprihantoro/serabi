@@ -1,13 +1,12 @@
 @use "var" as v;
 nav {
   svg {
-    width: 80px;
-    height: 50px;
-    fill: #fff;
+    display: none;
   }
   ul {
     display: flex;
     list-style: none;
+    font-size: 1.5rem;
   }
   ul li {
     margin: 0;
@@ -17,10 +16,11 @@ nav {
     color: v.$c2;
   }
   position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
+  top: 5px;
+  right: 9vw;
   // transform: translate(0, 88vh);
   text-align: center;
   z-index: 10;
+  animation-name: down;
 }
+

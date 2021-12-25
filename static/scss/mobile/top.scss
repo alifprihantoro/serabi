@@ -7,13 +7,8 @@
     }
     line-height: initial;
     width: 100%;
-  animation-name: top;
+  animation-name: down;
   animation-duration: 1s;  
   animation-fill-mode: both;
   }
-
-@keyframes top {
-  from {transform: translate(0,-999px)}
-  to {transform: translate(0,0)}
-}
 }

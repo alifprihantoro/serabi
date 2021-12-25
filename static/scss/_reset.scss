@@ -11,6 +11,8 @@ html {
   margin: 0;
   padding: 0;
   font-weight: 500;
+  animation-duration: 1s;  
+  animation-fill-mode: both;
     color: v.$c1;
 }
 @-ms-viewport {

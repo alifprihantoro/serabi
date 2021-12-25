@@ -1,0 +1,12 @@
+@keyframes down {
+  from {transform: translate(0,-999px)}
+  to {transform: translate(0,0)}
+}
+@keyframes up {
+  from {transform: translate(0,999px)}
+  to {transform: translate(0,0)}
+}
+@keyframes left {
+  from {transform: translate(-999px,0)}
+  to {transform: translate(0,0)}
+}
