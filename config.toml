@@ -2,3 +2,29 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'serabi'
+
+[[menu.nav]]
+identifier = "Home"
+name = "home"
+url = "#"
+weight = 1
+[[menu.nav]]
+identifier = "About"
+name = "about"
+url = "#about"
+weight = 2
+[[menu.nav]]
+identifier = "Contact"
+name = "tlp"
+url = "#contact"
+weight = 3
+[[menu.nav]]
+identifier = "Menu"
+name = "menu"
+url = "#album"
+weight = 4
+[[menu.nav]]
+identifier = "Album"
+name = "album"
+url = "#album"
+weight = 5

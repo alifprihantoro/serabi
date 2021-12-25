@@ -1,13 +1,19 @@
-<nav>
   <header >
-    <a href="/"class="logo"></a>
+    <a href="/"class="logo"><h1>{{.Title}}</h1></a>
+    <div class="nav">
+      <ul>
+        <li><a href="/"></a></li>
+      </ul>
+    </div>
   </header>
-  <div class="nav">
+<nav>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Menu</a></li>
+            {{ range .Site.Menus.nav.Sort.ByWeight }}
+            <li><a href="{{.URL}}"><span class="{{ .Name }}"></span>{{.Identifier}} </a></li>
+      {{end}}
+      <li><a href="#"><span class="about"></span>About</a></li>
+      <li><a href="#"><span class="tlp"></span> Contact</a></li>
+      <li><a href="#"><span class="menu"></span>Menu</a></li>
+      <li><a href="#"><span class="album"></span>Album</a></li>
     </ul>
-  </div>
 </nav>

@@ -1,32 +1,43 @@
+@use 'var' as v;
 @media only screen and (max-width: 720px) {
-  nav .nav {
+  nav {
+    svg{
+      width: 25px;
+      height: 25px;
+    }
+    li{
+      margin: auto !important;
+    }
     position: fixed;
-    bottom: 0;
+    top: 0;
     right: 0;
     width: 100%;
+    transform: translate(0, 88vh);
+    background: v.$bgd;
+    text-align: center;
   }
-.header {
+  .header {
     line-height: initial;
     width: 100%;
     text-align: center;
-}
-.btn:nth-of-type(2) {
-  display: block;
-}
-.serabi {
-  display: none;
-}
-footer {
+  }
+  .btn:nth-of-type(2) {
+    display: block;
+  }
+  .serabi {
+    display: none;
+  }
+  footer {
     padding: 50px 0;
     position: inherit;
     margin: auto;
     text-align: center;
-}
-.follow{
-   a {
-    margin-top: -15px;
-    margin: -15px auto 0 auto;
-}
-text-align: center;
-}
+  }
+  .follow {
+    a {
+      margin-top: -15px;
+      margin: -15px auto 0 auto;
+    }
+    text-align: center;
+  }
 }
