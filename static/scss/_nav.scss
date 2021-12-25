@@ -1,21 +1,4 @@
 @use "var" as v;
-header {
-  h1{
-    display: none;
-  }
-  svg{
-width: 100px !important;
-    fill: v.$c1;
-    height: 75px;
-    transform: translate(25px, 0);
-  }
-  position: sticky;
-  // display: flex;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: v.$bgd;
-}
 nav {
   svg {
     width: 80px;
@@ -34,10 +17,10 @@ nav {
     color: v.$c2;
   }
   position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    transform: translate(0, 88vh);
-    text-align: center;
-    z-index: 10;
+  top: 0;
+  right: 0;
+  width: 100%;
+  transform: translate(0, 88vh);
+  text-align: center;
+  z-index: 10;
 }

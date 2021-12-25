@@ -1,0 +1,18 @@
+@use '../var' as v;
+@media only screen and (max-width: 720px) {
+  nav {
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+    li {
+      margin: auto !important;
+    }
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: v.$bgd;
+    text-align: center;
+  }
+}

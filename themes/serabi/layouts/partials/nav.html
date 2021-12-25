@@ -2,7 +2,11 @@
     <a href="/"class="logo"><h1>{{.Title}}</h1></a>
     <div class="nav">
       <ul>
-        <li><a href="/"></a></li>
+  {{ with .Site.GetPage "/pages" }}
+  {{ range.Paginator.Pages }}
+  <li><a href="{{.Permalink}}">{{.Name}}</a></li>
+  {{ end }}
+  {{ end }}
       </ul>
     </div>
   </header>
@@ -11,9 +15,5 @@
             {{ range .Site.Menus.nav.Sort.ByWeight }}
             <li><a href="{{.URL}}"><span class="{{ .Name }}"></span>{{.Identifier}} </a></li>
       {{end}}
-      <li><a href="#"><span class="about"></span>About</a></li>
-      <li><a href="#"><span class="tlp"></span> Contact</a></li>
-      <li><a href="#"><span class="menu"></span>Menu</a></li>
-      <li><a href="#"><span class="album"></span>Album</a></li>
     </ul>
 </nav>

@@ -1,0 +1,44 @@
+@use "var" as v;
+header {
+  h1 {
+    display: none;
+  }
+  svg {
+    width: 100px !important;
+    fill: v.$c1;
+    height: 75px;
+    transform: translate(25px, 0);
+  }
+  ul {
+    &:before {
+      content: "\2807";
+      font-size: 50px;
+    }
+    li {
+      display: none;
+    }
+    &:hover li {
+      &:hover{
+        background: v.$bgd;
+      }
+    display: unset;
+    background: v.$bgl;
+    padding: 2px;
+    width: 100px;
+    }
+    padding: 25px;
+    position: fixed;
+    top: -19px;
+    right: 25px;
+    display: grid;
+    text-align: center;
+  }
+
+  position: sticky;
+  // display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+display: block;
+background: v.$bgl;
+}
