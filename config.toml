@@ -5,12 +5,12 @@ theme = 'serabi'
 
 [[menu.nav]]
 identifier = "Home"
-name = "home"
+name = "ihome"
 url = "#"
 weight = 1
 [[menu.nav]]
 identifier = "About"
-name = "about"
+name = "iabout"
 url = "#about"
 weight = 2
 [[menu.nav]]
@@ -20,11 +20,11 @@ url = "#contact"
 weight = 3
 [[menu.nav]]
 identifier = "Menu"
-name = "menu"
-url = "#album"
+name = "imenu"
+url = "#menu"
 weight = 4
 [[menu.nav]]
 identifier = "Album"
-name = "album"
+name = "ialbum"
 url = "#album"
 weight = 5
