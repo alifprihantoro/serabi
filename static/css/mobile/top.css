@@ -1,0 +1,1 @@
+@media only screen and (max-width: 720px){header{line-height:initial;width:100%;animation-name:top;animation-duration:1s;animation-fill-mode:both}header ul{right:-10px;top:-10px}@keyframes top{from{transform:translate(0, -999px)}to{transform:translate(0, 0)}}}/*# sourceMappingURL=top.css.map */

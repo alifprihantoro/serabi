@@ -1,0 +1,19 @@
+@use '../var' as v;
+@media only screen and (max-width: 720px) {
+  header {
+    ul {
+      right: -10px;
+      top: -10px;
+    }
+    line-height: initial;
+    width: 100%;
+  animation-name: top;
+  animation-duration: 1s;  
+  animation-fill-mode: both;
+  }
+
+@keyframes top {
+  from {transform: translate(0,-999px)}
+  to {transform: translate(0,0)}
+}
+}

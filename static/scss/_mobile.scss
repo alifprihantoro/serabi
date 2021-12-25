@@ -1,22 +1,21 @@
 @use 'var' as v;
 @use 'mobile/nav';
+@use 'mobile/top';
+@use 'mobile/header';
 @media only screen and (max-width: 720px) {
-  .header {
-    ul{
-      right: 15px;
-    }
-    line-height: initial;
-    width: 100%;
-    text-align: center;
+  .main{
+    margin: 0;
   }
   .btn:nth-of-type(2) {
     display: block;
   }
-  .serabi {
-    display: none;
+  img.serabi {
+    // display: none;
+    position: inherit;
+    margin-top: -100px;
   }
   footer {
-    padding: 50px 0;
+    padding: 50px 0 100px 0;
     position: inherit;
     margin: auto;
     text-align: center;

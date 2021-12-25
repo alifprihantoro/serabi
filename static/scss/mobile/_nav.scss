@@ -9,10 +9,18 @@
       margin: auto !important;
     }
     position: fixed;
-    bottom: 0;
+    top: unset;
+    bottom: 0 ;
     right: 0;
     width: 100%;
     background: v.$bgd;
     text-align: center;
+  animation-name: nav;
+  animation-duration: 1s;  
+  animation-fill-mode: both;
   }
+@keyframes nav {
+  from {transform: translate(0,999px)}
+  to {transform: translate(0,0)}
+}
 }
