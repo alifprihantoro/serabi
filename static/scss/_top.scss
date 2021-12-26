@@ -9,6 +9,7 @@ header {
     height: 75px;
     transform: translate(25px, 0);
   }
+  //nav top
   ul {
     &:before {
       content: "\2807";
@@ -29,12 +30,12 @@ header {
     padding: 25px;
     position: fixed;
     top: -19px;
-    right: 25px;
+    right: 0;
     display: grid;
     text-align: center;
   }
 
-  position: sticky;
+  position: fixed;
   // display: flex;
   top: 0;
   left: 0;
@@ -42,4 +43,5 @@ header {
 display: block;
 background: v.$bgl;
     animation-name: down;
+    z-index: 9;
 }

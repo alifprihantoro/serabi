@@ -4,7 +4,7 @@
 @use 'mobile/header';
 @media only screen and (max-width: 720px) {
   .main{
-    margin: 0;
+    margin: 15px 0;
   }
   .btn:nth-of-type(2) {
     display: block;
@@ -12,7 +12,7 @@
   img.serabi {
     // display: none;
     position: inherit;
-    margin-top: -70px;
+    margin-top: -45px;
     max-width: 80%;
   }
   footer {
