@@ -12,31 +12,18 @@ nav {
     margin: 0;
     padding: 15px;
   }
-  a{
-&:hover {
-    color: v.$c2;
-  border-bottom: .3rem solid v.$c2;
+  a {
+    &:hover {
+      color: v.$c2;
+      border-bottom: 0.3rem solid v.$c2;
+    }
+    font-size: 1rem;
   }
-  font-size: 1rem;
-
-  }  position: fixed;
+  position: fixed;
   top: 5px;
   right: 9vw;
   // transform: translate(0, 88vh);
   text-align: center;
   z-index: 10;
   animation-name: down;
-}
-// active link
-.home,.about ul li.about,.contact ul li.contact,.album ul li.album,.menu ul li.menu{
-  a{
-  border-bottom: 6px solid v.$c2;
-  color: v.$c2;
-  }
-}
-.about,.contact,.album,.menu{
-  .home a{
-  border-bottom: unset;
-  color: v.$c1;
-  }
 }
