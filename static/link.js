@@ -1,14 +1,15 @@
-// samakan kayak klick url
-window.addEventListener('popstate', function (event) {
+const ccls = ()=>{
 	// The URL changed...
-  console.log(event)
   const link = this.window.location.href
-  console.log(link)
-const cls = link.split("#")[1]
-  console.log(cls)
+  // console.log(link)
+  const cls = link.split("#")[1]
+  // console.log(cls)
   const body =  document.getElementsByTagName("BODY")[0]
-  console.log(body)
+  // console.log(body)
   body.className = cls
-
-  // alert(`ganti link ${window.location.href}`)
+}
+ccls()
+// samakan kayak klick url
+window.addEventListener('popstate', function () {
+ccls()
 });
