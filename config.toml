@@ -10,6 +10,7 @@ url = "#"
 weight = 1
 [[menu.nav]]
 identifier = "About"
+url = "#"
 name = "iabout"
 url = "#about"
 weight = 2
