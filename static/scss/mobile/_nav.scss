@@ -1,5 +1,5 @@
 @use "../var" as v;
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1080px) {
   nav {
     svg {
       fill: v.$c1;
