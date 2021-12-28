@@ -10,7 +10,8 @@
     {{ partial "head.html" . }}
     <link rel="stylesheet" href="/css/main.css" />
   </head>
-  <body class="home">
+  <body class="">
+    </div>
       {{ partial "nav.html" . }}
       <div class="main">
         {{ partial "header.html" . }}
@@ -19,9 +20,12 @@
       </div>
       {{ partial "waves.html" . }}
       <!-- pages -->
+      <div class="pages">
       {{ partial "pages/about.html" . }}
       {{ partial "pages/contact.html" . }}
       {{ partial "pages/menu.html" . }}
+      {{ partial "pages/album.html" . }}
+      </div>
     <script src="/main.js"></script>
     <script src="/link.js"></script>
   </body>

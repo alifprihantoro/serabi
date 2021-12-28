@@ -1,8 +1,18 @@
 @use "../var" as v;
-div.menu img {
+// table
+table, th, td {
+  border: 5px solid transparent;
+}
+div.menu {
+  h2{
+    text-align: center;
+  }
+  img {
   width: 200px;
 }
-  div.menu {
+
+}
+div.menu {
     .rasa {
       div {
         background-color: rgba(255, 255, 255, 0.4);
@@ -14,7 +24,10 @@ div.menu img {
       }
       display: grid;
       grid-template-columns: auto auto;
+      margin: auto;
+      max-width:720px ;
     }
+    overflow: scroll;
   }
 .menu {
   div.menu {
@@ -25,6 +38,18 @@ div.menu img {
     animation-name: right;
   }
 }
+@media only screen and (max-width: 720px) {
+  .menu div.menu {
+    .rasa{
+      img{
+max-width: 480px;
+min-width: 100px;
+width: 80vw;
+      }
+grid-template-columns: auto;
+  }
+
+  }}
 @media only screen and (max-width: 1080px) {
   .menu div.menu {
     img {
@@ -35,5 +60,14 @@ div.menu img {
     width: 100%;
     margin: auto;
     padding-bottom: 50vh;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .menu div.menu{
+.cover{
+display: flex;
+margin: auto;
+max-width: 1000px;
+}
   }
 }
