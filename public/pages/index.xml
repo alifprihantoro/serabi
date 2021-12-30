@@ -2,62 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on My New Hugo Site</title>
-    <link>http://serabikocorbuyuni.my.id/pages/</link>
+    <link>https://serabikocorbuyuni.my.id/pages/</link>
     <description>Recent content in Pages on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Dec 2020 11:58:50 +0000</lastBuildDate><atom:link href="http://serabikocorbuyuni.my.id/pages/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Dec 2020 11:58:50 +0000</lastBuildDate><atom:link href="https://serabikocorbuyuni.my.id/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contact</title>
-      <link>http://serabikocorbuyuni.my.id/pages/contact/</link>
+      <link>https://serabikocorbuyuni.my.id/pages/contact/</link>
       <pubDate>Tue, 29 Dec 2020 11:58:50 +0000</pubDate>
       
-      <guid>http://serabikocorbuyuni.my.id/pages/contact/</guid>
+      <guid>https://serabikocorbuyuni.my.id/pages/contact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://serabikocorbuyuni.my.id/pages/about/</link>
+      <link>https://serabikocorbuyuni.my.id/pages/about/</link>
       <pubDate>Sun, 17 Dec 2017 19:50:57 +0800</pubDate>
       
-      <guid>http://serabikocorbuyuni.my.id/pages/about/</guid>
+      <guid>https://serabikocorbuyuni.my.id/pages/about/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://serabikocorbuyuni.my.id/pages/bookmark/</link>
+      <link>https://serabikocorbuyuni.my.id/pages/bookmark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://serabikocorbuyuni.my.id/pages/bookmark/</guid>
+      <guid>https://serabikocorbuyuni.my.id/pages/bookmark/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://serabikocorbuyuni.my.id/pages/cokies/</link>
+      <link>https://serabikocorbuyuni.my.id/pages/cokies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://serabikocorbuyuni.my.id/pages/cokies/</guid>
+      <guid>https://serabikocorbuyuni.my.id/pages/cokies/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://serabikocorbuyuni.my.id/pages/privacy-policy/</link>
+      <link>https://serabikocorbuyuni.my.id/pages/privacy-policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://serabikocorbuyuni.my.id/pages/privacy-policy/</guid>
+      <guid>https://serabikocorbuyuni.my.id/pages/privacy-policy/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://serabikocorbuyuni.my.id/pages/sitemap/</link>
+      <link>https://serabikocorbuyuni.my.id/pages/sitemap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://serabikocorbuyuni.my.id/pages/sitemap/</guid>
+      <guid>https://serabikocorbuyuni.my.id/pages/sitemap/</guid>
       <description></description>
     </item>
     

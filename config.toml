@@ -1,4 +1,4 @@
-baseURL = 'http://serabikocorbuyuni.my.id/'
+baseURL = 'https://serabikocorbuyuni.my.id/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'serabi'

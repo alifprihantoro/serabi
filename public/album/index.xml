@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Albums on My New Hugo Site</title>
-    <link>http://serabikocorbuyuni.my.id/album/</link>
+    <link>https://serabikocorbuyuni.my.id/album/</link>
     <description>Recent content in Albums on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Dec 2021 22:04:11 +0700</lastBuildDate><atom:link href="http://serabikocorbuyuni.my.id/album/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Dec 2021 22:04:11 +0700</lastBuildDate><atom:link href="https://serabikocorbuyuni.my.id/album/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gambar Serabi</title>
-      <link>http://serabikocorbuyuni.my.id/album/gambar-serabi/</link>
+      <link>https://serabikocorbuyuni.my.id/album/gambar-serabi/</link>
       <pubDate>Tue, 28 Dec 2021 22:04:11 +0700</pubDate>
       
-      <guid>http://serabikocorbuyuni.my.id/album/gambar-serabi/</guid>
+      <guid>https://serabikocorbuyuni.my.id/album/gambar-serabi/</guid>
       <description></description>
     </item>
     
