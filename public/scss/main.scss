@@ -1,0 +1,22 @@
+@use "var" as v;
+@use "reset";
+@use "top";
+@use "nav";
+@use "header";
+@use "btn";
+@use "footer";
+@use "waves";
+@use "serabi";
+@use "mobile";
+@use "animation";
+
+// pages
+@use "pages/anim";
+@use "pages/about";
+@use "pages/contact";
+@use "pages/menu";
+@use "pages/album";
+
+// .pages div{
+//   animation-duration: unset !important;
+// }

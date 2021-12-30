@@ -1,0 +1,25 @@
+@use "../var" as v;
+.contact {
+  div.contact{
+    .btn {
+      display: block;
+    }
+  width: auto;
+  height: 80vh;
+  z-index: 8;
+  // background-color: red;
+  padding: 25px;
+  animation-name: right;
+  background: rgb(255, 255, 255,.2);
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .contact div.contact {
+    // text-align: center;
+    overflow: scroll;
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+    padding-bottom: 50vh;
+  }
+}
