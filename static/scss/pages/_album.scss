@@ -1,5 +1,5 @@
 @use "../var" as v;
-div.album{
+.album div.album{
 .flip-box {
   background-color: transparent;
   width: 300px;
@@ -38,6 +38,7 @@ div.album{
   color: white;
   transform: rotateY(180deg);
 }
+overflow-y: scroll;
 }
 
 .album {
@@ -61,4 +62,19 @@ display: grid;
     animation-name: up;
   text-align: center;
   }
+}
+@media only screen and (max-width: 720px) {
+.album .cover{
+    grid-template-columns: auto ;
+}
+}
+@media only screen and (min-width: 780px) {
+  .album div.album{
+overflow-y: hidden;
+  }
+}
+@media only screen and (min-width: 1080px) {
+.album .cover{
+    grid-template-columns: auto auto auto ;
+}
 }
