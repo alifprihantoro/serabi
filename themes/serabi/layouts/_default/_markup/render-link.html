@@ -1,0 +1,9 @@
+<a href="{{ .Destination | safeURL }}" 
+    {{ with .Title}} title="{{ . }}"{{ end }}
+{{ if or  (strings.HasPrefix .Destination "https://muryp.my.id" ) (strings.HasPrefix .Destination "muryp.my.id" ) (strings.HasPrefix .Destination "/" ) (strings.HasPrefix .Destination "#" )}}
+onclick="link(this.href); return false"
+    {{ else }} 
+    target="_blank"
+    rel="nofollow"
+    {{ end }}
+    >{{ .Text | safeHTML }}</a>

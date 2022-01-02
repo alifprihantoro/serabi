@@ -1,0 +1,14 @@
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img
+        src="/img/{{ .Destination | safeURL }}"
+        alt="{{ .Text }}"
+        style="width: 300px; height: 200px"
+      />
+    </div>
+    <div class="flip-box-back">
+      <p>{{ .Text }}</p>
+    </div>
+  </div>
+</div>
