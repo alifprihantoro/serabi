@@ -8,13 +8,25 @@ img {
 
 }
 .about div.about {
-  width: 100%;
-  height: 80vh;
+    &:after{
+      content: '.';
+      padding-bottom: 100vh;
+    }
+    .cover{
+  max-width: 1080px;
+  margin: auto;
+    }
   z-index: 7;
   // background-color: red;
   padding: 25px;
-  display: flex;
-  animation-name: right;
+  // display: flex;
+  animation-name: up;
+  overflow-y: scroll;
+}
+.card {
+  display:grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
 }
 @media only screen and (max-width: 720px) {
   .about div.about {
