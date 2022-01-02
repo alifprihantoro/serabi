@@ -17,11 +17,6 @@ thumbnail : ""
 description: ""
 
 ---
-![contoh text](/serabi.png)
-![](/serabi.png)
-![](/serabi.png)
-![](/serabi.png)
-![](/serabi.png)
-![](/serabi.png)
-![](/serabi.png)
-![](/serabi.png)
+![Rasa pandan yang harum dipadukan dengan kuah yang hangat dan nikmat](menu-pandan.png)
+![Rasa gula jawa yang manis dipadukan dengan kuah yang hangat dan nikmat](/menu-gula-jawa.png)
+![Rasa gula jawa yang manis bercampur dengan harumnya pandan dipadukan dengan kuah yang hangat dan nikmat](/menu-mix.png)

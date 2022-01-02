@@ -58,6 +58,8 @@ display: grid;
     grid-template-columns: auto auto;
     margin: auto;
     width: fit-content;
+    background: v.$bgl;
+    padding: 15px;
   }
   .flip-box{
     div{

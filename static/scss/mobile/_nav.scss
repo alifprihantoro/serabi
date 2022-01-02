@@ -3,8 +3,8 @@
   nav {
     svg {
       fill: v.$c1;
-      width: 20vw;
-      max-height: 25px;
+      // width: 20vw;
+      max-height: 20px;
       display: unset;
     }
     ul li {
@@ -16,10 +16,10 @@
           fill: v.$c2;
         }
       }
+          line-height: 5px !important;
       margin: auto !important;
-      padding: 1rem 0;
+      padding: 5px 0 !important;
     }
-    width: 100%;
     position: fixed;
     top: unset;
     bottom: 0;
@@ -32,7 +32,7 @@
   // active link
   nav ul li a {
     border-bottom: unset !important;
-    font-size: 1rem;
+    font-size: .6rem;
   }
   .home nav ul li:nth-child(1) {
     a {
