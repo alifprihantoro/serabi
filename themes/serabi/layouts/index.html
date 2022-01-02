@@ -13,20 +13,53 @@
   <body class="">
     </div>
       {{ partial "nav.html" . }}
-      <div class="main">
-        {{ partial "header.html" . }}
-        {{ partial "follow.html" . }}
-        {{ partial "footer.html" . }}
+      <div id="main" value='main ini'>
       </div>
+      {{ partial "footer.html" . }}
       {{ partial "waves.html" . }}
       <!-- pages -->
       <div class="pages">
-      {{ partial "pages/about.html" . }}
-      {{ partial "pages/contact.html" . }}
-      {{ partial "pages/menu.html" . }}
-      {{ partial "pages/album.html" . }}
       </div>
-    <script src="/main.js"></script>
+    <script>
+const ccls = ()=>{
+	// The URL changed...
+  const link = this.window.location.href
+  // console.log(link)
+  const cls = link.split("#")[1]
+  // console.log(cls)
+  const body =  document.getElementsByTagName("BODY")[0]
+  // console.log(body)
+if (cls==="" || cls==undefined) {
+  body.className = "home"
+}else{
+  body.className = cls
+}
+const main = document.getElementById("main");
+if (cls==="" || cls==undefined) {
+        main.innerHTML = `
+    {{ partial "header.html" . }}
+        {{ partial "follow.html" . }}`
+      }
+      else if(cls==='about'){
+        main.innerHTML = `
+      {{ partial "pages/about.html" . }}
+      `}
+      else if(cls==='contact'){
+        main.innerHTML = `
+     {{ partial "pages/contact.html" . }}
+      `}
+      else if(cls==='menu'){
+        main.innerHTML = `
+      {{ partial "pages/menu.html" . }}
+      `}
+      else if(cls==='album'){
+        main.innerHTML = `
+      {{ partial "pages/album.html" . }}
+     `}
+}
+    </script>
     <script src="/link.js"></script>
+    <script src="/main.js"></script>
+    <script src="/tes.js"></script>
   </body>
 </html>

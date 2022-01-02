@@ -10,12 +10,12 @@
     color: v.$c2;
   }
 }
-div.about,.main,div.contact,div.menu,div.album {
-    position: fixed;
-    width: 100vw;
-    top: 75px;
-transform: translate(120vw,0)
-}
-.home .main{
+// div.about,.main,div.contact,div.menu,div.album {
+//     position: fixed;
+//     width: 100vw;
+//     top: 75px;
+// transform: translate(120vw,0);
+// }
+.main{
   animation-name: right;
 }
