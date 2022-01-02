@@ -1,63 +1,7 @@
 <div class="menu">
-    <div class="flip-box">
-      <div class="flip-box-inner">
-        <div class="flip-box-front">
-          <img
-            src="/img/serabi.png"
-            alt="Paris"
-            style="width: 300px; height: 200px"
-          />
-        </div>
-        <div class="flip-box-back">
-          <h2>Paris</h2>
-          <p>What an amazing city</p>
-        </div>
-      </div>
-    </div>
-    <div class="flip-box">
-      <div class="flip-box-inner">
-        <div class="flip-box-front">
-          <img
-            src="/img/serabi.png"
-            alt="Paris"
-            style="width: 300px; height: 200px"
-          />
-        </div>
-        <div class="flip-box-back">
-          <h2>Paris</h2>
-          <p>What an amazing city</p>
-        </div>
-      </div>
-    </div>
-    <div class="flip-box">
-      <div class="flip-box-inner">
-        <div class="flip-box-front">
-          <img
-            src="/img/serabi.png"
-            alt="Paris"
-            style="width: 300px; height: 200px"
-          />
-        </div>
-        <div class="flip-box-back">
-          <h2>Paris</h2>
-          <p>What an amazing city</p>
-        </div>
-      </div>
-    </div>
-    <div class="flip-box">
-      <div class="flip-box-inner">
-        <div class="flip-box-front">
-          <img
-            src="/img/serabi.png"
-            alt="Paris"
-            style="width: 300px; height: 200px"
-          />
-        </div>
-        <div class="flip-box-back">
-          <h2>Paris</h2>
-          <p>What an amazing city</p>
-        </div>
-      </div>
-    </div>
-
+  <h2>Album</h2>
+  <h3>Taruh cursor di image</h3>
+  <div class="cover">
+{{ with .Site.GetPage "/menu.md" }}{{ .Content | safeHTML }}{{ end }}
+  </div>
 </div>

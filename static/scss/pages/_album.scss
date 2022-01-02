@@ -1,5 +1,11 @@
 @use "../var" as v;
 .album div.album{
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .flip-box {
   background-color: transparent;
   width: 300px;
@@ -39,10 +45,15 @@
   transform: rotateY(180deg);
 }
 overflow-y: scroll;
+    height: 100%;
+    padding-bottom: 20vh;
 }
 
 .album {
   .cover{
+    p{
+      display: none;
+    }
 display: grid;
     grid-template-columns: auto auto;
     margin: auto;
@@ -67,11 +78,6 @@ display: grid;
 .album .cover{
     grid-template-columns: auto ;
 }
-}
-@media only screen and (min-width: 780px) {
-  .album div.album{
-overflow-y: hidden;
-  }
 }
 @media only screen and (min-width: 1080px) {
 .album .cover{

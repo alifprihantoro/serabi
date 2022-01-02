@@ -17,7 +17,7 @@ thumbnail : ""
 description: ""
 
 ---
-![ini](/serabi.png)
+![contoh text](/serabi.png)
 ![](/serabi.png)
 ![](/serabi.png)
 ![](/serabi.png)

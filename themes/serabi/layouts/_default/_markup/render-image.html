@@ -8,7 +8,7 @@
       />
     </div>
     <div class="flip-box-back">
-      <p>{{ .Text }}</p>
+      <span>{{ .Text | safeHTML }}</span>
     </div>
   </div>
 </div>

@@ -8,10 +8,6 @@ img {
 
 }
 .about div.about {
-    &:after{
-      content: '.';
-      padding-bottom: 100vh;
-    }
     .cover{
   max-width: 1080px;
   margin: auto;
@@ -22,17 +18,25 @@ img {
   // display: flex;
   animation-name: up;
   overflow-y: scroll;
+  height: 100vh;
+  padding-bottom: 50vh;
 }
 .card {
   display:grid;
+    grid-template-columns: auto;
+}
+@media only screen and (min-width: 720px) {
+  .card{
     grid-template-columns: auto auto;
     grid-gap: 15px;
+  }
+
 }
-@media only screen and (max-width: 720px) {
-  .about div.about {
-    display: block;
-    overflow: scroll;
-    text-align: center;
-    padding-bottom: 50vh;
-  
-}}
+// @media only screen and (max-width: 720px) {
+//   .about div.about {
+//     display: block;
+//     overflow: scroll;
+//     text-align: center;
+//     padding-bottom: 50vh;
+//
+// }}

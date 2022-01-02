@@ -1,10 +1,10 @@
 @use "../var" as v;
 .contact {
   div.contact{
-    &:after{
-      content: '.';
-      padding-bottom: 100vh;
-    }
+    // &:after{
+    //   content: '.';
+    //   padding-bottom: 100vh;
+    // }
     .btn {
       display: block;
     }
@@ -24,7 +24,6 @@
   z-index: 8;
   // background-color: red;
   padding: 25px;
-  background: rgb(255, 255, 255,.2);
   overflow-y: scroll;
   overflow-x: hidden!important;
     place-items: center;
