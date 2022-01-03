@@ -4,11 +4,12 @@ var urlsToCache = [
   '/css/main.css',
   '/main.js',
   '/link.js',
-  '/img/menu-pandan.png',
-  '/img/menu-gula-jawa.png',
-  '/img/menu-mix.png',
-  '/img/profile-serabi.png',
-  '/img/serabi.png',
+  '/img/menu-pandan.min.png',
+  '/img/menu-gula-jawa.min.png',
+  '/img/menu-mix.min.png',
+  '/img/profile-serabi.min.png',
+  '/img/serabi.min.png',
+  '/favicon.ico'
 ];
 
 self.addEventListener('install', function(event) {

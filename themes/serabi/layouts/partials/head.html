@@ -1,6 +1,6 @@
 <!--- title tags --->
 {{- if .IsHome -}}
-<title itemprop="name">{{ .Site.Title }} | Personal Blog</title>
+<title itemprop="name">{{ .Site.Title }} | {{ .Description }}</title>
 {{- else -}}
 <title itemprop="name">{{ .Title }} | {{ .Site.Title }}</title>
 {{- end -}}
@@ -54,8 +54,8 @@
 <!-- tambahan -->
 <link rel="manifest" href="{{ .Site.BaseURL }}manifest.json" />
 <!-- Theme Color -->
-<meta name="theme-color" content="{{ .Site.Params.nav1 }}" /> 
-<meta name="msapplication-TileColor" content="{{ .Site.Params.nav1 }}" />
+<meta name="theme-color" content="{{ .Site.Params.colorApp }}" /> 
+<meta name="msapplication-TileColor" content="{{ .Site.Params.colorApp }}" />
 
 <meta name="keywords" content="{{ .Site.Params.Description }},{{ .Params.keywords }}" />
 <meta name="imagemode" content="force" />

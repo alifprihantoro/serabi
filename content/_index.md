@@ -11,6 +11,6 @@ type: post
 image: ""
 thumbnail : ""
 
-description: ""
+description: "Serabi Khas Ngampin Ambarawa, kuliner, makanan tradisional, "
 
 ---

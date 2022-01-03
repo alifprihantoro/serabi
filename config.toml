@@ -1,7 +1,26 @@
 baseURL = 'https://serabikocorbuyuni.my.id/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Serabi Kocor Bu Yuni'
 theme = 'serabi'
+icon = "/favicon.ico"
+
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = [":git", "lastmod", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
+
+copyright = 'This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+
+[sitemap]
+  changefreq = 'monthly'
+  filename = 'sitemap.xml'
+  priority = 0.5
 
 [[menu.nav]]
 identifier = "Home"

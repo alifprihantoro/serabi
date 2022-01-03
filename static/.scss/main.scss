@@ -18,6 +18,12 @@
 @use "pages/menu";
 @use "pages/album";
 
+.flip-box span div {
+    padding: 5px;
+    background: #00000057;
+    margin-top: 5px;
+}
+
 // .pages div{
 //   animation-duration: unset !important;
 // }
