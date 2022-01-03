@@ -10,30 +10,30 @@ header {
     transform: translate(25px, 0);
   }
   //nav top
-  ul {
-    &:before {
-      content: "\2807";
-      font-size: 30px;
-    }
-    li {
-      display: none;
-    }
-    &:hover li {
-      &:hover{
-        background: v.$bgd;
-      }
-    display: unset;
-    background: v.$bgl;
-    padding: 2px;
-    width: 100px;
-    }
-    padding: 25px;
-    position: fixed;
-    top: -19px;
-    right: 0;
-    display: grid;
-    text-align: center;
-  }
+  // ul {
+  //   &:before {
+  //     content: "\2807";
+  //     font-size: 30px;
+  //   }
+  //   li {
+  //     display: none;
+  //   }
+  //   &:hover li {
+  //     &:hover{
+  //       background: v.$bgd;
+  //     }
+  //   display: unset;
+  //   background: v.$bgl;
+  //   padding: 2px;
+  //   width: 100px;
+  //   }
+  //   padding: 25px;
+  //   position: fixed;
+  //   top: -19px;
+  //   right: 0;
+  //   display: grid;
+  //   text-align: center;
+  // }
 
   position: fixed;
   // display: flex;
