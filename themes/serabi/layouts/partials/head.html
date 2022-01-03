@@ -52,7 +52,7 @@
 <meta name="twitter:site" content="{{ .Site.Params.twitter }}">
 <meta name="twitter:creator" content="{{ .Site.Params.twitter }}" />
 <!-- tambahan -->
-<!-- <link rel="manifest" href="{{ .Site.BaseURL }}manifest.json" /> -->
+<link rel="manifest" href="{{ .Site.BaseURL }}manifest.json" />
 <!-- Theme Color -->
 <meta name="theme-color" content="{{ .Site.Params.nav1 }}" /> 
 <meta name="msapplication-TileColor" content="{{ .Site.Params.nav1 }}" />
@@ -101,7 +101,7 @@
     <meta name="news_keywords" content="{{ index . 0 }}" />
     <meta property="article:section" content="{{ index . 0 }}" /> 
   {{ end }}
-
+<script src="/sw.js"></script>
   <script defer type="application/ld+json">
     {
       "@context": "http://schema.org",
