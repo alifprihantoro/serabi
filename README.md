@@ -1,7 +1,10 @@
 # serabi
 Hai, I'm Alief Prihantoro.
+
 This website is landing page only.
+
 Theme : food
+
 Color : green
 
 This website use for my mother for selling tradisional food.
