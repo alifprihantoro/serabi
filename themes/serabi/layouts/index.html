@@ -26,21 +26,6 @@
       {{ partial "pages/menu.html" . }}
       {{ partial "pages/album.html" . }}
       </div>
-<script>
-  if('serviceWorker' in navigator) {
-      navigator.serviceWorker
-          .register('/sw.js', { scope: '/' })
-          .then(function(registration) {
-              //console.log('Service Worker Registered');
-          });
-
-      navigator.serviceWorker
-          .ready
-          .then(function(registration) {
-              //console.log('Service Worker Ready');
-          });
-  }
-</script>
     <script src="/main.js"></script>
     <script src="/link.js"></script>
   </body>
