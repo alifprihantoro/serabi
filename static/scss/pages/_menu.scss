@@ -61,7 +61,7 @@ span {
     display: none;
   }
 display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     margin: auto;
     width: fit-content;
     // background: v.$bgl;
@@ -75,6 +75,12 @@ display: grid;
 overflow-y: scroll;
     height: 100%;
     padding-bottom: 20vh;
+}
+@media only screen and (min-width: 720px) {
+.menu div.menu .cover{
+    grid-template-columns:auto auto;
+
+  }
 }
 // table
 // table, th, td {

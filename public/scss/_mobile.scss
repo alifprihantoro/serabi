@@ -3,6 +3,9 @@
 @use 'mobile/top';
 @use 'mobile/header';
 @media only screen and (max-width: 1080px) {
+  .desk{
+    display: none;
+  }
   .main{
     // margin: 15px 0;
     overflow: scroll;
