@@ -1,0 +1,68 @@
+@use "var" as v;
+.btn {
+  // btn new
+  svg {
+    position: absolute;
+    transform: translate(-25px, -33px);
+    fill: #fff;
+    z-index: 9;
+    width: 20px;
+}
+
+  a {
+   span {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: v.$bg2;
+    transition: all .5s;
+    z-index: -1;
+  }
+&:hover{
+  svg{
+    fill: v.$bg;
+  }
+  span{
+    color: v.$bg;
+  }
+&:after {
+    width: 100%;
+  }
+
+    border-color: v.$bg;
+    color: v.$bgd !important;
+  }
+
+ margin: 10px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    font-size: 13px;
+    font-weight: bold;
+    border: 2px solid v.$c1;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all .5s;
+    cursor: pointer;
+    padding: 0 10px 0 35px;
+    width: fit-content;
+}
+
+  display: flex;
+}
+.follow svg {
+    transform: translate(-23px, 6px) !important;
+}
+
+.btn a.btn-tlp {
+background: v.$bgd;
+}

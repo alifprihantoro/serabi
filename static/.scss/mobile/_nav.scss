@@ -1,0 +1,45 @@
+@use "../var" as v;
+@media only screen and (max-width: 1080px) {
+  nav {
+    svg {
+      fill: v.$c1;
+      // width: 20vw;
+      max-height: 20px;
+      display: unset;
+    }
+    ul li {
+      &:hover {
+        a {
+          color: v.$c2 !important;
+        }
+        svg {
+          fill: v.$c2;
+        }
+      }
+          line-height: 5px !important;
+      margin: auto !important;
+      padding: 5px 0 !important;
+    }
+    position: fixed;
+    top: unset;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: v.$bgd;
+    text-align: center;
+    animation-name: up;
+  }
+  // active link
+  nav ul li a {
+    border-bottom: unset !important;
+    font-size: .6rem;
+  }
+  .home nav ul li:nth-child(1) {
+    a {
+      color: v.$c2 !important;
+    }
+    svg {
+      fill: v.$c2;
+    }
+  }
+}

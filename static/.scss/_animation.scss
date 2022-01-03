@@ -1,0 +1,20 @@
+@keyframes down {
+  from {transform: translate(0,-120vw)}
+  to {transform: translate(0,0)}
+}
+@keyframes up {
+  from {transform: translate(0,120vw)}
+  to {transform: translate(0,0)}
+}
+@keyframes right {
+  from {transform: translate(120vw,0)}
+  to {transform: translate(0,0)}
+}
+@keyframes left {
+  from {transform: translate(-120vw,0)}
+  to {transform: translate(0,0)}
+}
+@keyframes out {
+  from{transform: translate(0,0)} 
+  to {transform: translate(120vw,0)}
+}

@@ -1,0 +1,14 @@
+@use '../var' as v;
+@media only screen and (max-width: 1080px) {
+  header {
+    ul {
+      right: -10px;
+      top: -20px;
+    }
+    line-height: initial;
+    width: 100%;
+  animation-name: down;
+  animation-duration: 1s;  
+  animation-fill-mode: both;
+  }
+}

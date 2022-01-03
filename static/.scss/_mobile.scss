@@ -1,0 +1,36 @@
+@use 'var' as v;
+@use 'mobile/nav';
+@use 'mobile/top';
+@use 'mobile/header';
+@media only screen and (max-width: 1080px) {
+  .desk{
+    display: none;
+  }
+  .main{
+    // margin: 15px 0;
+    overflow: scroll;
+    height: 80vh;
+  }
+  .btn:nth-of-type(2) {
+    display: block;
+  }
+  img.serabi {
+    // display: none;
+    position: inherit;
+    margin-top: -45px;
+    max-width: 80%;
+  }
+  footer {
+    padding: 50px 0 100px 0;
+    position: unset;
+    margin: auto;
+    text-align: center;
+  }
+  .follow {
+    a {
+      margin-top: -15px;
+      margin: -15px auto 0 auto;
+    }
+    text-align: center;
+  }
+}

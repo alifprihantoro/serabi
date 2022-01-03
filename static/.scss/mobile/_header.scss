@@ -1,0 +1,22 @@
+@use "../var" as v;
+@media only screen and (max-width: 1080px) {
+  h2{
+    font-size: 2rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .header {
+    line-height: initial;
+    width: 100%;
+    text-align: center;
+    background: #035a0e66;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 20%);
+    // margin: 70px auto;
+  animation-name: left;
+  animation-duration: 1s;  
+  animation-fill-mode: both;
+  }
+}

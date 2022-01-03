@@ -1,0 +1,43 @@
+@use "../var" as v;
+.contact {
+  div.contact{
+    // &:after{
+    //   content: '.';
+    //   padding-bottom: 100vh;
+    // }
+    .btn {
+      display: block;
+    }
+    .link{
+  animation-name: left;
+    }
+    .maps{
+      width: 480px;
+      height: 480px;
+  animation-name: right;
+  background-color:rgb(255, 255, 255,.5) ;
+    }
+    transform: translate(0,0);
+  // width: auto;
+    width: 100%;
+  height: 80vh;
+  z-index: 8;
+  // background-color: red;
+  padding: 25px;
+  overflow-y: scroll;
+  overflow-x: hidden!important;
+    place-items: center;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .contact div.contact {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: auto auto;
+    // text-align: center;
+    width: 100%;
+    // max-width: 360px;
+    margin: auto;
+    padding-bottom: 50vh;
+  }
+}

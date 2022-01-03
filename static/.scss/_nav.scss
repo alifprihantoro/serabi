@@ -1,0 +1,29 @@
+@use "var" as v;
+nav {
+  svg {
+    display: none;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.5rem;
+  }
+  ul li {
+    margin: 0;
+    padding: 15px;
+  }
+  a {
+    &:hover {
+      color: v.$c2;
+      border-bottom: 0.3rem solid v.$c2;
+    }
+    font-size: 1rem;
+  }
+  position: fixed;
+  top: -10px;
+  right: 9vw;
+  // transform: translate(0, 88vh);
+  text-align: center;
+  z-index: 10;
+  animation-name: down;
+}

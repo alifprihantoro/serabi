@@ -1,0 +1,21 @@
+@use "../var" as v;
+// active link
+.home ul li.home,
+.about ul li.about,
+.contact ul li.contact,
+.album ul li.album,
+.menu ul li.menu {
+  a {
+    border-bottom: 6px solid v.$c2;
+    color: v.$c2;
+  }
+}
+div.about,.main,div.contact,div.menu,div.album {
+    position: fixed;
+    width: 100vw;
+    top: 75px;
+transform: translate(120vw,0)
+}
+.home .main{
+  animation-name: left;
+}

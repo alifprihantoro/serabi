@@ -1,0 +1,59 @@
+@use "../var" as v;
+div.about {
+  p{
+    max-width: 480px;
+  }
+img {
+  max-width: 480px;
+  max-height: 480px;
+  width: 50vw;
+  border: 15px solid v.$bgl;
+  margin: auto;
+}
+
+}
+.about div.about {
+    .cover{
+  max-width: 1080px;
+  margin: auto;
+    }
+  z-index: 7;
+  padding: 25px;
+  // display: flex;
+  animation-name: up;
+  overflow-y: scroll;
+  height: 100vh;
+  padding-bottom: 50vh;
+}
+.card {
+  display:grid;
+    grid-template-columns: auto;
+}
+@media only screen and (max-width: 720px) {
+  div.about{
+  .ttg-penjual{
+    grid-area: ttg-penjual;
+  }
+  .img-penjual{
+    grid-area: img-penjual;
+  }
+  .card{
+    grid-template: 'img-penjual''ttg-penjual';
+  }
+  }
+}
+@media only screen and (min-width: 720px) {
+  .card{
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+  }
+
+}
+// @media only screen and (max-width: 720px) {
+//   .about div.about {
+//     display: block;
+//     overflow: scroll;
+//     text-align: center;
+//     padding-bottom: 50vh;
+//
+// }}
