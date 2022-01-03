@@ -2,11 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://serabikocorbuyuni.my.id/album/</loc>
-    <lastmod>2021-12-28T22:04:11+07:00</lastmod>
+    <loc>https://serabikocorbuyuni.my.id/menu/</loc>
+    <lastmod>2022-01-02T20:27:56+07:00</lastmod>
   </url><url>
-    <loc>https://serabikocorbuyuni.my.id/album/gambar-serabi/</loc>
-    <lastmod>2021-12-28T22:04:11+07:00</lastmod>
+    <loc>https://serabikocorbuyuni.my.id/slug/</loc>
+    <lastmod>2022-01-02T19:20:59+07:00</lastmod>
+  </url><url>
+    <loc>https://serabikocorbuyuni.my.id/tags/tag/</loc>
+    <lastmod>2022-01-02T19:20:59+07:00</lastmod>
+  </url><url>
+    <loc>https://serabikocorbuyuni.my.id/tags/</loc>
+    <lastmod>2022-01-02T19:20:59+07:00</lastmod>
   </url><url>
     <loc>https://serabikocorbuyuni.my.id/</loc>
     <lastmod>2021-12-22T16:26:21+07:00</lastmod>
@@ -29,7 +35,5 @@
     <loc>https://serabikocorbuyuni.my.id/pages/sitemap/</loc>
   </url><url>
     <loc>https://serabikocorbuyuni.my.id/categories/</loc>
-  </url><url>
-    <loc>https://serabikocorbuyuni.my.id/tags/</loc>
   </url>
 </urlset>

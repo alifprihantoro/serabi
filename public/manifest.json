@@ -1,0 +1,18 @@
+{
+    "name": "Serabi Kocor Bu Yuni V1",
+    "short_name": "serabikocorbuyuniv1",
+    "icons": [{
+        "src": "/app/faicon128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+    } ,{
+        "src": "/app/splash.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "orientation" : "portrait",
+    "background_color": "#038811",
+    "theme_color": "#038811"
+}

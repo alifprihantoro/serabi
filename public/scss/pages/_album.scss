@@ -1,5 +1,11 @@
 @use "../var" as v;
-div.album{
+.album div.album{
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .flip-box {
   background-color: transparent;
   width: 300px;
@@ -38,14 +44,22 @@ div.album{
   color: white;
   transform: rotateY(180deg);
 }
+overflow-y: scroll;
+    height: 100%;
+    padding-bottom: 20vh;
 }
 
 .album {
   .cover{
+    p{
+      display: none;
+    }
 display: grid;
     grid-template-columns: auto auto;
     margin: auto;
     width: fit-content;
+    background: v.$bgl;
+    padding: 15px;
   }
   .flip-box{
     div{
@@ -58,7 +72,17 @@ display: grid;
     height: 80vh;
     z-index: 8;
     // padding: 25px;
-    animation-name: right;
+    animation-name: up;
   text-align: center;
   }
+}
+@media only screen and (max-width: 720px) {
+.album .cover{
+    grid-template-columns: auto ;
+}
+}
+@media only screen and (min-width: 1080px) {
+.album .cover{
+    grid-template-columns: auto auto auto ;
+}
 }
