@@ -35,12 +35,12 @@ span {
 }
 
 .flip-box-front {
-  background-color: #bbb;
+  background-color: transparent;
   color: black;
 }
 
 .flip-box-back {
-  background-color: #555;
+  background-color: v.$bgd;
   color: white;
   transform: rotateY(180deg);
 }
