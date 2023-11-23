@@ -1,4 +1,4 @@
-baseURL = 'https://serabikocorbuyuni.my.id/'
+baseURL ='/'
 languageCode = 'en-us'
 title = 'Serabi Kocor Bu Yuni'
 theme = 'serabi'
@@ -29,7 +29,6 @@ url = "#"
 weight = 1
 [[menu.nav]]
 identifier = "About"
-url = "#"
 name = "iabout"
 url = "#about"
 weight = 2
