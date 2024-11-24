@@ -1,4 +1,4 @@
-type TReturn = {
+export type TLinksNav = {
   name: string
   url: string
   icon: string
@@ -29,4 +29,4 @@ export default [
     name: 'Blog',
     url: '/search/label/blog',
   },
-] as TReturn[]
+] as TLinksNav[]

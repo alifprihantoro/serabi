@@ -1,6 +1,12 @@
+import type { TLinksNav } from '../../configs/links/nav'
 import NavBottom from './bottom'
 
-export default function Nav(url: string, title: string) {
+export type TArgs = {
+  url: string
+  title: string
+  List: TLinksNav[]
+}
+export default function Nav({ List, url, title }: TArgs) {
   return html`
     <div class="navbar bg-primary">
       <header class="text-white">
@@ -8,7 +14,7 @@ export default function Nav(url: string, title: string) {
           ${title}
         </a>
       </header>
-      ${NavBottom}
+      ${NavBottom(List)}
     </div>
   `
 }
