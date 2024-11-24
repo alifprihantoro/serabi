@@ -1,29 +1,3 @@
-# serabi
-Hai, I'm Alief Prihantoro.
+## SERABI NGAMPIN BU YUNI
 
-This website is landing page only.
-
-Theme : food
-
-Color : green
-
-This website use for my mother for selling tradisional food.
-
-Feature :
-- SPA(maybe)
-- PWA
-- SEO
-- Maps
-- Navigate
-
-Tech :
-- SCSS/CSS
-- HTML5
-- ES6/JS
-- JSON
-- HUGO
-- NETLIFY
-
-Other :
-- NVIM (text editor)
-
+This template for serabi ngampin bu yuni.
