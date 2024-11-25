@@ -1,6 +1,9 @@
 import Heroes, { type TArgs } from './'
 
-export default {
+import type { StoryObj } from '@storybook/html'
+
+type Story = StoryObj<TArgs>
+const DEFAULT: Story = {
   args: {
     img: 'https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp',
     button: {
@@ -11,7 +14,7 @@ export default {
       'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     title: 'serabi ngampin bu yuni',
   },
-  argstypes: {
+  argTypes: {
     img: {
       control: 'text',
       description: 'url images.',
@@ -25,18 +28,13 @@ export default {
       description: 'url images.',
     },
     button: {
-      name: {
-        control: 'text',
-        description: 'url images.',
-      },
-      url: {
-        control: 'text',
-        description: 'url images.',
-      },
+      control: 'object',
+      description: 'links list',
     },
   },
   render: (Args: TArgs) => {
     return Heroes(Args)
   },
 }
+export default DEFAULT
 export const heroes = {}
