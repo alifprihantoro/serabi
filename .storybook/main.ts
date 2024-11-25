@@ -20,6 +20,8 @@ const config: Targs.StorybookConfig = {
     '@storybook/addon-essentials',
     '@chromatic-com/storybook',
     '@storybook/addon-interactions',
+    '@storybook/addon-a11y',
+    // '@storybook/addon-interactions',
   ],
   framework: {
     name: '@storybook/html-vite',
@@ -30,4 +32,3 @@ const config: Targs.StorybookConfig = {
   },
 }
 export default config
-

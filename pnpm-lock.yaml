@@ -17,9 +17,6 @@ importers:
       '@storybook/addon-console':
         specifier: ^3.0.0
         version: 3.0.0(@storybook/addon-actions@8.4.5(storybook@8.4.5(prettier@3.3.3)))(react@18.3.1)
-      '@storybook/test':
-        specifier: ^8.3.6
-        version: 8.4.5(storybook@8.4.5(prettier@3.3.3))
       astro:
         specifier: ^4.16.12
         version: 4.16.12(@types/node@22.9.1)(rollup@4.26.0)(terser@5.36.0)(typescript@5.6.3)
@@ -37,7 +34,7 @@ importers:
         specifier: ^9.15.0
         version: 9.15.0
       '@storybook/addon-a11y':
-        specifier: ^8.3.6
+        specifier: ^8.4.5
         version: 8.4.5(storybook@8.4.5(prettier@3.3.3))
       '@storybook/addon-docs':
         specifier: ^8.3.6
@@ -46,7 +43,7 @@ importers:
         specifier: ^8.3.6
         version: 8.4.5(@types/react@18.3.12)(storybook@8.4.5(prettier@3.3.3))
       '@storybook/addon-interactions':
-        specifier: ^8.3.6
+        specifier: ^8.4.5
         version: 8.4.5(storybook@8.4.5(prettier@3.3.3))
       '@storybook/addon-links':
         specifier: ^8.3.6
@@ -75,6 +72,9 @@ importers:
       '@storybook/react-vite':
         specifier: ^8.3.6
         version: 8.4.5(@storybook/test@8.4.5(storybook@8.4.5(prettier@3.3.3)))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.26.0)(storybook@8.4.5(prettier@3.3.3))(typescript@5.6.3)(vite@5.4.11(@types/node@22.9.1)(terser@5.36.0))
+      '@storybook/test':
+        specifier: ^8.4.5
+        version: 8.4.5(storybook@8.4.5(prettier@3.3.3))
       '@tailwindcss/typography':
         specifier: ^0.5.15
         version: 0.5.15(tailwindcss@3.4.15)
