@@ -1,15 +1,17 @@
 import Nav, { type TArgs } from './'
 import List from '../../configs/links/nav'
+import type { StoryObj } from '@storybook/html'
 
+type Story = StoryObj<TArgs>
 const args: TArgs = {
   url: '/',
   title: 'serabi ngampin bu yuni',
   List,
 }
 
-export default {
+const DEFAULT: Story = {
   args,
-  argstypes: {
+  argTypes: {
     url: {
       control: 'text',
       description: 'url web.',
@@ -35,8 +37,13 @@ export default {
       },
     ],
   },
-  render: (Args: TArgs) => {
+  render: (Args) => {
     return Nav(Args)
   },
 }
-export const nav = {}
+export default DEFAULT
+/*
+ * See https://storybook.js.org/docs/writing-stories/play-function#working-with-the-canvas
+ * to learn more about using the canvasElement to query the DOM
+ */
+export const nav: Story = {}

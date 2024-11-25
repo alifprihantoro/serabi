@@ -10,13 +10,13 @@
     "preview": "astro preview",
     "astro": "astro",
     "story:dev": "storybook dev -p 6006",
-    "story:build": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_4489abe6c8eefcd"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@muryp/vite-html": "^1.0.6",
     "@storybook/addon-console": "^3.0.0",
-    "@storybook/test": "^8.3.6",
     "astro": "^4.16.12",
     "typescript": "^5.6.3"
   },
@@ -25,10 +25,10 @@
     "@chromatic-com/storybook": "^1.9.0",
     "@eslint/js": "^9.15.0",
     "@muryp/vite-html": "^1.0.8",
-    "@storybook/addon-a11y": "^8.3.6",
+    "@storybook/addon-a11y": "^8.4.5",
     "@storybook/addon-docs": "^8.3.6",
     "@storybook/addon-essentials": "^8.3.6",
-    "@storybook/addon-interactions": "^8.3.6",
+    "@storybook/addon-interactions": "^8.4.5",
     "@storybook/addon-links": "^8.3.6",
     "@storybook/addon-mdx-gfm": "^8.3.6",
     "@storybook/addon-onboarding": "^8.3.6",
@@ -38,6 +38,7 @@
     "@storybook/html-vite": "^8.3.6",
     "@storybook/react": "^8.3.6",
     "@storybook/react-vite": "^8.3.6",
+    "@storybook/test": "^8.4.5",
     "@tailwindcss/typography": "^0.5.15",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "autoprefixer": "^10.4.20",
