@@ -1,4 +1,4 @@
-import Link from '../link'
+import Link from '../../global/link'
 
 export type TArgs = {
   img: string

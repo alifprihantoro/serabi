@@ -1,4 +1,4 @@
-import owner from '../../configs/links/owner'
+import owner from '../../../configs/links/owner'
 import Owner, { type TArgs } from './'
 import type { StoryObj } from '@storybook/html'
 

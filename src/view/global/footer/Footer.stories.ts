@@ -1,7 +1,7 @@
-import { TITLE } from '../../configs/global'
+import { TITLE } from '../../../configs/global'
 import Footer, { type TArgs } from './'
 import type { StoryObj } from '@storybook/html'
-import links from '../../configs/links/footer'
+import links from '../../../configs/links/footer'
 
 type Story = StoryObj<TArgs>
 const args: TArgs = {

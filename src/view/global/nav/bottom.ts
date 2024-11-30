@@ -1,4 +1,4 @@
-import type { TLinksNav } from '../../configs/links/nav'
+import type { TLinksNav } from '../../../configs/links/nav'
 import Link from '../link'
 
 export default function NavBottom(List: TLinksNav[]) {

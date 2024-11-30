@@ -1,6 +1,6 @@
-import { ICON_ABOUT } from '../../configs/icons'
-import Card from '../card'
-import heading from '../heading'
+import { ICON_ABOUT } from '../../../configs/icons'
+import Card from '../../global/card'
+import heading from '../../global/heading'
 
 export type TArgs = {
   name: string

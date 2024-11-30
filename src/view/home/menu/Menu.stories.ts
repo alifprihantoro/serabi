@@ -1,5 +1,5 @@
 import Menu, { type TArgs } from './'
-import List from '../../configs/links/menu'
+import List from '../../../configs/links/menu'
 import type { StoryObj } from '@storybook/html'
 
 type Story = StoryObj<TArgs>

@@ -1,5 +1,5 @@
-import Card from '../card'
-import heading from '../heading'
+import Card from '../../global/card'
+import heading from '../../global/heading'
 
 type TList = {
   name: string
