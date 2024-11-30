@@ -5,7 +5,7 @@ import type { StoryObj } from '@storybook/html'
 type Story = StoryObj<TArgs>
 const args: TArgs = {
   url: '/',
-  title: 'serabi ngampin bu yuni',
+  name: 'serabi ngampin bu yuni',
   List,
 }
 
@@ -16,7 +16,7 @@ const DEFAULT: Story = {
       control: 'text',
       description: 'url web.',
     },
-    title: {
+    name: {
       control: 'text',
       description: 'name web.',
     },

@@ -1,20 +1,20 @@
 import type { TLinksNav } from '../../configs/links/nav'
+import Link from '../link'
 
 export default function NavBottom(List: TLinksNav[]) {
-  let LIST_LINK = ''
+  let Links = ''
   for (let i = 0; i < List.length; i++) {
     const { name, url, icon } = List[i]
-    LIST_LINK += html`
-      <li class="m-auto align-middle max-w-full text-white">
-        <a
-          href="${url}"
-          class="m-1 capitalize font-Rokkit font-bold flex
-        justify-center items-center flex-col md:flex-row "
-          data-tip="${name}">
-          ${icon}
-          <span>${name}</span>
-        </a>
-      </li>
+    const LINK = Link({
+      name: `${icon}<span>${name}</span>`,
+      url,
+      className: `m-1 capitalize font-Rokkit font-bold flex
+        justify-center items-center flex-col md:flex-row `,
+      Attr: `data-tip="${name}"`,
+    })
+
+    Links += html`
+      <li class="m-auto align-middle max-w-full text-white">${LINK}</li>
     `
   }
   return html`
@@ -27,7 +27,7 @@ export default function NavBottom(List: TLinksNav[]) {
       <div class="w-fit h-fit m-auto md:mr-0">
         <ul
           class="menu menu-xs md:menu-md menu-horizontal bg-primary md:bg-transparent rounded-box align-middle">
-          ${LIST_LINK}
+          ${Links}
         </ul>
       </div>
     </nav>

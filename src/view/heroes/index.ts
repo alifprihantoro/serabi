@@ -1,3 +1,5 @@
+import Link from '../link'
+
 export type TArgs = {
   img: string
   title: string
@@ -16,7 +18,7 @@ export default function Heroes({ img, title, description, button }: TArgs) {
           <h1 class="text-5xl font-bold uppercase">${title}</h1>
           <p class="py-6">${description}</p>
           <button class="btn btn-primary uppercase text-white">
-            <a href="${button.url}">${button.name}</a>
+            ${Link({ name: button.name, url: button.url })}
           </button>
         </div>
       </div>
