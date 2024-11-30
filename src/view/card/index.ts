@@ -3,9 +3,9 @@ import Link from '../link'
 export interface TArgs {
   title: string
   description?: string
-  btn: {
+  btn?: {
     name: string
-    url?: string
+    url: string
   }
   img: {
     url: string
@@ -14,9 +14,17 @@ export interface TArgs {
   }
 }
 export default function Card({ img, btn, title, description }: TArgs) {
-  const BUTTON = html`<button class="btn btn-primary text-white">
-    ${btn.name}
-  </button>`
+  /*   prettier-ignore-start */
+  const BUTTON = btn
+    ? Link({
+      name: html`<button class="btn btn-primary text-white">
+          ${btn.name}
+        </button>`,
+      url: btn.url,
+    })
+    : ''
+  /*   prettier-ignore-end */
+
   return html`
     <div class="card bg-secondary/30 w-full md:max-w-60 shadow-xl">
       <figure>
@@ -25,9 +33,7 @@ export default function Card({ img, btn, title, description }: TArgs) {
       <div class="card-body">
         <h2 class="card-title">${title}</h2>
         <p>${description || ''}</p>
-        <div class="card-actions justify-end">
-          ${btn.url ? Link({ name: BUTTON, url: btn.url }) : BUTTON}
-        </div>
+        <div class="card-actions justify-end">${BUTTON}</div>
       </div>
     </div>
   `
