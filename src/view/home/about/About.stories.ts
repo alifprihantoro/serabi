@@ -4,7 +4,7 @@ import type { StoryObj } from '@storybook/html'
 
 type TStory = { List: TArgs }
 type Story = StoryObj<TStory>
-const args: TStory = { List: owner }
+export const args: TStory = { List: owner }
 
 const DEFAULT: Story = {
   args,

@@ -3,7 +3,7 @@ import List from '../../../configs/links/nav'
 import type { StoryObj } from '@storybook/html'
 
 type Story = StoryObj<TArgs>
-const args: TArgs = {
+export const args: TArgs = {
   url: '/',
   name: 'serabi ngampin bu yuni',
   List,

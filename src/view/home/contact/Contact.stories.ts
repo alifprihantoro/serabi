@@ -2,12 +2,13 @@ import Contact, { type TArgs } from './'
 import type { StoryObj } from '@storybook/html'
 import ListContact from '../../../configs/links/contact'
 import ListSosmed from '../../../configs/links/sosmed'
+import { MAPS_SEARCH } from '../../../configs/global'
 
 type Story = StoryObj<TArgs>
-const args: TArgs = {
+export const args: TArgs = {
   ListContact,
   ListSosmed,
-  mapsSearch: 'Serabi Kocor Khas Ngampin Bu Yuni',
+  mapsSearch: MAPS_SEARCH,
 }
 const DEFAULT: Story = {
   args,

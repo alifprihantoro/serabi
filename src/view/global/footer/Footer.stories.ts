@@ -4,7 +4,7 @@ import type { StoryObj } from '@storybook/html'
 import links from '../../../configs/links/footer'
 
 type Story = StoryObj<TArgs>
-const args: TArgs = {
+export const args: TArgs = {
   name: TITLE,
   links,
 }

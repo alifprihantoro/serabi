@@ -3,7 +3,7 @@ import List from '../../../configs/links/menu'
 import type { StoryObj } from '@storybook/html'
 
 type Story = StoryObj<TArgs>
-const args: TArgs = {
+export const args: TArgs = {
   ...List,
   label: {
     onsite: 'Onsite',
