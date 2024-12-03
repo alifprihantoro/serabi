@@ -10,16 +10,24 @@ export type TArgs = {
   }
 }
 export default function Heroes({ img, title, description, button }: TArgs) {
+  const LINK = Link({
+    name: html`<button class="btn btn-primary uppercase text-white">
+      ${button.name}
+    </button>`,
+    url: button.url,
+  })
+
   return html`
-    <div class="hero bg-secondary/15 min-h-screen text-primary">
+    <div class="hero min-h-screen text-primary">
       <div class="hero-content flex-col md:flex-row">
-        <img src="${img}" class="max-w-sm rounded-lg shadow-2xl" />
+        <img
+          title="${title}"
+          src="${img}"
+          class="max-w-sm rounded-lg shadow-2xl" />
         <div>
           <h1 class="text-5xl font-bold uppercase">${title}</h1>
-          <p class="py-6">${description}</p>
-          <button class="btn btn-primary uppercase text-white">
-            ${Link({ name: button.name, url: button.url })}
-          </button>
+          <p class="my-6 text-[#333]">${description}</p>
+          ${LINK}
         </div>
       </div>
     </div>

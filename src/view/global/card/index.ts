@@ -14,7 +14,7 @@ export interface TArgs {
   }
 }
 export default function Card({ img, btn, title, description }: TArgs) {
-  /*   prettier-ignore-start */
+  /* prettier-ignore-start */
   const BUTTON = btn
     ? Link({
       name: html`<button class="btn btn-primary text-white">
@@ -23,10 +23,10 @@ export default function Card({ img, btn, title, description }: TArgs) {
       url: btn.url,
     })
     : ''
-  /*   prettier-ignore-end */
+  /* prettier-ignore-end */
 
   return html`
-    <div class="card bg-secondary/30 w-full md:max-w-60 shadow-xl">
+    <div class="card w-full md:max-w-60 shadow-xl">
       <figure>
         <img src="${img.url}" alt="${img.alt}" />
       </figure>

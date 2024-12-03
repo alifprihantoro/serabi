@@ -5,11 +5,12 @@ export type TArgs = {
   links: { name: string; url: string }[]
 }
 export default function Footer({ name, links }: TArgs) {
-  const LINKS = links.map(({ name, url }) => Link({ name, url })).join('')
+  const LINKS = links
+    .map(({ name, url }) => Link({ name, url, className: 'uppercase bold' }))
+    .join('')
   return html`
-    <footer
-      class="footer footer-center bg-base-200 text-base-content rounded p-10">
-      <nav class="grid grid-flow-col gap-4">${LINKS}</nav>
+    <footer class="footer footer-center bg-primary rounded p-10 text-white">
+      <nav class="flex flex-wrap gap-3 justify-center">${LINKS}</nav>
       <aside>
         <p>Copyright &#169; ${Link({ name, url: '/' })} - All right reserved</p>
       </aside>

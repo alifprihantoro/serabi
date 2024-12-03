@@ -22,9 +22,9 @@ export default function HomePage({
   footerArgs,
 }: TArgs) {
   return html`
-    <div>
+    <div class="shadow-primary/30 shadow mx-3 max-w-4xl md:m-auto">
       ${Nav(navArgs) + Heroes(heroesArgs) + Menu(menuArgs)}
-      <div>${About(aboutArgs) + contact(contactArgs)}</div>
+      <div class="md:flex">${About(aboutArgs) + contact(contactArgs)}</div>
       ${Footer(footerArgs)}
     </div>
   `

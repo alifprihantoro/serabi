@@ -1,13 +1,8 @@
 import Nav, { type TArgs } from './'
-import List from '../../../configs/links/nav'
 import type { StoryObj } from '@storybook/html'
+import args from './dummy'
 
 type Story = StoryObj<TArgs>
-export const args: TArgs = {
-  url: '/',
-  name: 'serabi ngampin bu yuni',
-  List,
-}
 
 const DEFAULT: Story = {
   args,

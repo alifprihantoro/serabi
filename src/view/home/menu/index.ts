@@ -50,7 +50,10 @@ export default function Menu({ onsite, preorder, label }: TArgs) {
     )
     .join('')
   const BTN = (url: string) => {
-    return html`<a class="btn btn-primary text-white btn-circle" href="${url}"
+    return html`<a
+      title="More Menu"
+      class="btn btn-primary text-white btn-circle"
+      href="${url}"
       ><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 12 24">
         <path
           fill="currentColor"
@@ -63,15 +66,21 @@ export default function Menu({ onsite, preorder, label }: TArgs) {
     // eslint-disable-next-line prefer-template
     heading({
       title: 'Menu Makan di Tempat',
+      className: 'text-primary',
       btn: BTN(label.onsite),
-      content: ONSITE,
+      content: html`<div class="flex w-full max-w-4xl gap-4 p-3">
+        ${ONSITE}
+      </div>`,
     }) +
     '</br>' +
     heading({
       title: 'Menu Pre-order',
+      className: 'text-primary',
       btn: BTN(label.preorder),
-      content: PREORDER,
+      content: html`<div class="flex w-full max-w-4xl gap-4 p-3">
+        ${PREORDER}
+      </div>`,
     })
 
-  return html` <div class="bg-primary/10 p-3">${LISTS}</div> `
+  return html` <div>${LISTS}</div> `
 }

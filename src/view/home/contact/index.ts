@@ -36,30 +36,30 @@ export default function contact({
   ).join('')
 
   const CONTENT = heading({
+    className: 'text-primary',
     content: html`
-      <div class="flex flex-wrap gap-3">${LIST_CONTACT + LIST_SOSMED}</div>
+      <div class="flex flex-wrap gap-3 p-3">${LIST_CONTACT + LIST_SOSMED}</div>
     `,
     btn: ICON_CONTACT,
     title: 'contact',
   })
   const URL_MAP = `https://maps.google.com/maps?q=${maps.replace(/ /g, '%20')}&t=&z=19&ie=UTF8&iwloc=&output=embed`
   return html`
-    <div class="bg-primary/10 p-3">
+    <div class="md:ml-3">
       <div class="mb-3">${CONTENT}</div>
-      <iframe
-        width="480"
-        height="480"
-        id="gmap_canvas"
-        src="${URL_MAP}"
-        frameborder="0"
-        scrolling="no"
-        marginheight="0"
-        marginwidth="0"></iframe>
-      <a
-        href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"
-        >divi discount</a
-      >
-      <a href="https://www.embedgooglemap.net">embed google maps in web page</a>
+      <div class="mb-3 w-full p-3">
+        <iframe
+          title="lokasi ${maps}"
+          id="gmap_canvas"
+          src="${URL_MAP}"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"></iframe>
+        <a href="https://www.embedgooglemap.net"
+          >embed google maps in web page</a
+        >
+      </div>
     </div>
   `
 }

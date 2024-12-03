@@ -1,11 +1,11 @@
 import owner from '../../../configs/links/owner'
 import Page, { type TArgs } from './'
 import type { StoryObj } from '@storybook/html'
-import { args as navArgs } from '../../global/nav/Nav.stories'
-import { args as contactArgs } from '../../home/contact/Contact.stories'
-import { args as menuArgs } from '../../home/menu/Menu.stories'
-import { args as footerArgs } from '../../global/footer/Footer.stories'
-import { args as heroesArgs } from '../../home/heroes/Heroes.stories'
+import navArgs from '../../global/nav/dummy'
+import contactArgs from '../../home/contact/dummy'
+import menuArgs from '../../home/menu/dummy'
+import footerArgs from '../../global/footer/dummy'
+import heroesArgs from '../../home/heroes/dummy'
 
 type Story = StoryObj<TArgs>
 const args: TArgs = {

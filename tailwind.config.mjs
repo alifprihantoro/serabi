@@ -19,7 +19,7 @@ export default {
       {
         light: {
           ...themes['cupcake'],
-          primary: '#53904e',
+          primary: '#038811',
           secondary: '#784b2c',
         },
       },

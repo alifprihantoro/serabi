@@ -1,13 +1,8 @@
-import { TITLE } from '../../../configs/global'
 import Footer, { type TArgs } from './'
 import type { StoryObj } from '@storybook/html'
-import links from '../../../configs/links/footer'
+import args from './dummy'
 
 type Story = StoryObj<TArgs>
-export const args: TArgs = {
-  name: TITLE,
-  links,
-}
 
 const DEFAULT: Story = {
   args,

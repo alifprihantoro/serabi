@@ -1,15 +1,8 @@
 import Menu, { type TArgs } from './'
-import List from '../../../configs/links/menu'
 import type { StoryObj } from '@storybook/html'
+import args from './dummy'
 
 type Story = StoryObj<TArgs>
-export const args: TArgs = {
-  ...List,
-  label: {
-    onsite: 'Onsite',
-    preorder: 'Preorder',
-  },
-}
 
 const DEFAULT: Story = {
   args,
