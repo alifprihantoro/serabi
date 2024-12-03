@@ -11,7 +11,7 @@ type Story = StoryObj<TArgs>
 const args: TArgs = {
   aboutArgs: owner,
   contactArgs,
-  navArgs,
+  navArgs: { ...navArgs, isHome: true },
   menuArgs,
   footerArgs,
   heroesArgs,

@@ -13,6 +13,7 @@ export type TArgs = {
   contactArgs: TContact
   footerArgs: TFooter
 }
+
 export default function HomePage({
   navArgs,
   heroesArgs,

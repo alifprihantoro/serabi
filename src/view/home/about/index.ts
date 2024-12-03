@@ -26,6 +26,7 @@ export default function About(ListOwner: TArgs) {
     content: html` <div class="block p-3">${LIST_OWNER}</div> `,
     btn: ICON_ABOUT,
     title: 'owner',
+    id: 'about',
   })
   return html` <div>${OWNER}</div> `
 }

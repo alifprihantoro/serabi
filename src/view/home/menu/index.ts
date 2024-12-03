@@ -1,3 +1,4 @@
+import { ICON_CHECKOUT } from '../../../configs/icons'
 import Card from '../../global/card'
 import heading from '../../global/heading'
 
@@ -25,7 +26,7 @@ export default function Menu({ onsite, preorder, label }: TArgs) {
           name: name,
         },
         btn: {
-          name: 'Order',
+          name: `${ICON_CHECKOUT}Order`,
           url: url,
         },
         title: name,
@@ -42,7 +43,7 @@ export default function Menu({ onsite, preorder, label }: TArgs) {
           name: name,
         },
         btn: {
-          name: 'Order',
+          name: `${ICON_CHECKOUT}Order`,
           url: url,
         },
         title: name,
@@ -65,6 +66,7 @@ export default function Menu({ onsite, preorder, label }: TArgs) {
   const LISTS =
     // eslint-disable-next-line prefer-template
     heading({
+      id: 'menu',
       title: 'Menu Makan di Tempat',
       className: 'text-primary',
       btn: BTN(label.onsite),
