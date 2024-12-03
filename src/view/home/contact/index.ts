@@ -47,19 +47,15 @@ export default function contact({
   return html`
     <div class="md:ml-3">
       <div class="mb-3">${CONTENT}</div>
-      <div class="mb-3 w-full p-3">
-        <iframe
-          title="lokasi ${maps}"
-          id="gmap_canvas"
-          src="${URL_MAP}"
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"></iframe>
-        <a href="https://www.embedgooglemap.net"
-          >embed google maps in web page</a
-        >
-      </div>
+      <iframe
+        title="lokasi ${maps}"
+        class="w-full mb-3 px-3"
+        id="gmap_canvas"
+        src="${URL_MAP}"
+        frameborder="0"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0"></iframe>
     </div>
   `
 }

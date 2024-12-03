@@ -70,7 +70,7 @@ export default function Menu({ onsite, preorder, label }: TArgs) {
       title: 'Menu Makan di Tempat',
       className: 'text-primary',
       btn: BTN(label.onsite),
-      content: html`<div class="flex w-full max-w-4xl gap-4 p-3">
+      content: html`<div class="md:flex w-full max-w-4xl gap-4 p-3">
         ${ONSITE}
       </div>`,
     }) +
@@ -79,7 +79,7 @@ export default function Menu({ onsite, preorder, label }: TArgs) {
       title: 'Menu Pre-order',
       className: 'text-primary',
       btn: BTN(label.preorder),
-      content: html`<div class="flex w-full max-w-4xl gap-4 p-3">
+      content: html`<div class="md:flex w-full max-w-4xl gap-4 p-3">
         ${PREORDER}
       </div>`,
     })

@@ -6,6 +6,7 @@ import contactArgs from '../../home/contact/dummy'
 import menuArgs from '../../home/menu/dummy'
 import footerArgs from '../../global/footer/dummy'
 import heroesArgs from '../../home/heroes/dummy'
+import { TELP } from '../../../configs/links/contact'
 
 type Story = StoryObj<TArgs>
 const args: TArgs = {
@@ -15,6 +16,7 @@ const args: TArgs = {
   menuArgs,
   footerArgs,
   heroesArgs,
+  telp: TELP,
 }
 
 const DEFAULT: Story = {

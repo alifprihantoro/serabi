@@ -1,5 +1,6 @@
 import Footer, { type TArgs as TFooter } from '../../global/footer'
 import Nav, { type TArgs as TNav } from '../../global/nav'
+import WaBtn from '../../global/waBtn'
 import About, { type TArgs as TAbout } from '../about'
 import contact, { type TArgs as TContact } from '../contact'
 import Heroes, { type TArgs as THeroes } from '../heroes'
@@ -12,6 +13,7 @@ export type TArgs = {
   aboutArgs: TAbout
   contactArgs: TContact
   footerArgs: TFooter
+  telp: number
 }
 
 export default function HomePage({
@@ -21,12 +23,13 @@ export default function HomePage({
   aboutArgs,
   contactArgs,
   footerArgs,
+  telp,
 }: TArgs) {
   return html`
     <div class="shadow-primary/30 shadow mx-3 max-w-4xl md:m-auto">
       ${Nav(navArgs) + Heroes(heroesArgs) + Menu(menuArgs)}
       <div class="md:flex">${About(aboutArgs) + contact(contactArgs)}</div>
-      ${Footer(footerArgs)}
+      ${Footer(footerArgs) + WaBtn(telp)}
     </div>
   `
 }

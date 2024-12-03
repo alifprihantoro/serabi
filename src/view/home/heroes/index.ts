@@ -20,7 +20,7 @@ export default function Heroes({ img, title, description, button }: TArgs) {
   return html`
     <div class="hero text-primary">
       <div class="hero-content flex-col md:flex-row">
-        <img title="${title}" src="${img}" class="max-w-sm rounded-lg" />
+        <img title="${title}" src="${img}" class="w-full max-w-sm rounded-lg" />
         <div>
           <h1 class="text-5xl font-bold uppercase">${title}</h1>
           <p class="my-6 text-[#333]">${description}</p>
