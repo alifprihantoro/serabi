@@ -13,3 +13,29 @@ a {
 p {
   @apply font-Rokkit;
 }
+
+*,
+*:hover {
+  scrollbar-color: auto;
+  scroll-behavior: smooth;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-primary/30;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/50;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
+}
