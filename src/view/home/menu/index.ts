@@ -2,7 +2,7 @@ import { ICON_CHECKOUT } from '../../../configs/icons'
 import Card from '../../global/card'
 import heading from '../../global/heading'
 
-type TList = {
+export type TList = {
   name: string
   img: string
   url: string
@@ -16,25 +16,9 @@ export type TArgs = {
     preorder: string
   }
 }
-export default function Menu({ onsite, preorder, label }: TArgs) {
-  const ONSITE = onsite
-    .map(({ name, url, img }) =>
-      Card({
-        img: {
-          url: img,
-          alt: name,
-          name: name,
-        },
-        btn: {
-          name: `${ICON_CHECKOUT}Order`,
-          url: url,
-        },
-        title: name,
-      }),
-    )
-    .join('')
 
-  const PREORDER = preorder
+export const MenuList = (list: TList) => {
+  return list
     .map(({ name, url, img }) =>
       Card({
         img: {
@@ -50,6 +34,12 @@ export default function Menu({ onsite, preorder, label }: TArgs) {
       }),
     )
     .join('')
+}
+
+export default function Menu({ onsite, preorder, label }: TArgs) {
+  const ONSITE = MenuList(onsite)
+  const PREORDER = MenuList(preorder)
+
   const BTN = (url: string) => {
     return html`<a
       title="More Menu"

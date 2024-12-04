@@ -1,10 +1,8 @@
 import owner from '../../../configs/links/owner'
 import Page, { type TArgs } from './'
 import type { StoryObj } from '@storybook/html'
-import navArgs from '../../global/nav/dummy'
 import contactArgs from '../../home/contact/dummy'
 import menuArgs from '../../home/menu/dummy'
-import footerArgs from '../../global/footer/dummy'
 import heroesArgs from '../../home/heroes/dummy'
 import { TELP } from '../../../configs/links/contact'
 
@@ -12,9 +10,7 @@ type Story = StoryObj<TArgs>
 const args: TArgs = {
   aboutArgs: owner,
   contactArgs,
-  navArgs: { ...navArgs, isHome: true },
   menuArgs,
-  footerArgs,
   heroesArgs,
   telp: TELP,
 }
