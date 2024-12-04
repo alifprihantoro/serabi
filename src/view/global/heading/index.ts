@@ -12,7 +12,7 @@ export default function heading({ content, btn, title, id, className }: TArgs) {
     <h2
       class="text-2xl font-thin flex bg-primary/10 p-3 my-3 ${className || ''}"
       id="${id}">
-      <span class="self-center !bold uppercase">${title}</span>
+      <span class="self-center font-bold uppercase">${title}</span>
       <span class="ml-auto">${btn}</span>
     </h2>
     ${content}
