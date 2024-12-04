@@ -1,6 +1,6 @@
 import { ICON_CONTACT } from '../icons'
 
-const TELP = 6283829383123
+export const TELP = 6283829383123
 const EMAIL = 'bicorfood@gmail.com'
 export default [
   {
