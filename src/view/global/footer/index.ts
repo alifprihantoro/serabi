@@ -14,9 +14,7 @@ export default function Footer({ name, links }: TArgs) {
     <footer
       class="footer footer-center bg-primary rounded p-10 text-white max-md:mb-24">
       <nav class="flex flex-wrap gap-3 justify-center">${LINKS}</nav>
-      <aside>
-        <p>Copyright &#169; ${Link({ name, url: '/' })} - All right reserved</p>
-      </aside>
+      <p>Copyright &#169; ${Link({ name, url: '/' })} - All right reserved</p>
     </footer>
   `
 }

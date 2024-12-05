@@ -28,6 +28,7 @@ export default function NavBottom(List: TLinksNav, isHome?: boolean) {
         flex justify-center items-center
         md:static md:justify-end md:items-end
         "
+      title="Navigasi Utama"
       data-aos="zoom-in">
       <div class="w-fit h-fit m-auto md:mr-0">
         <ul

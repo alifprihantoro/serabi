@@ -21,48 +21,62 @@ const args: TArgs = {
   menu: menu,
   title: 'serabi rasa pandan',
   content: html`
-    <div class="flex scrollbar w-full snap-x snap-mandatory overflow-x-scroll">
+    <div
+      class="flex scrollbar w-full snap-x snap-mandatory overflow-x-scroll"
+      tabindex="0">
       <img
+        role="img"
+        alt="serabi rasa pandan"
         class="image-full h-[300px] w-[300px] object-scale-down "
         src="${IMG_SERABI}" />
       <img
+        role="img"
+        alt="serabi rasa pandan"
         class="image-full h-[300px] w-[300px] object-scale-down "
         src="${IMG_SERABI}" />
     </div>
     <div>
       ${DETAIL_TITLE}
-      <ul style="text-align: left;">
+      <ul>
         <li>Variant Rasa: Harum Pandan dan kuah kolak yang manis</li>
         <li>Harga: Rp. 6.000/porsi (isi 5 buah)</li>
-        <li>Composisi :</li>
-        <ul>
-          <li>Tepung Beras</li>
-          <li>Santan (kelapa parut)</li>
-          <li>Daun pandan</li>
-          <li>Perasa pandan (panili, essen pewarna makanan)</li>
-        </ul>
-        <li>Promo :&nbsp;</li>
-        <ul>
-          <li>beli kelipatan 10 porsi dapat 1 porsi&nbsp;</li>
-          <li>Foto dan rating gmaps, min. Pembelian 5, dapat 1 porsi.</li>
-          <li>Beli 10 porsi dan foto, serata rating gmaps dapat? 2 porsi</li>
-          <li>Dan mungkin ada promosi lain lagi (silahkan hubungi pembeli)</li>
-        </ul>
-        <li>Pre order :&nbsp;</li>
-        <ul>
-          <li>Min. Pemesanan H-1 + uang muka (jika pesanan banyak/custom)</li>
-          <li>
-            Jika pesan lebih dari 500 pcs (100 porsi), dan jam mepet,
-            kemungkinan ada tambahan harga. (Hal ini biasanya terjadi karena
-            kapasitas kami yang hanya mampu 500 pcs, dan sehingga lebihannya
-            akan diambilkan ke penjual lain/nyewa orang, yang mana harga serabi
-            untuk pesanan akan lebih murah di kami)&nbsp;
-          </li>
-          <li>
-            Jika merasa kurang percaya dengan pembayaran online, silahkan
-            kunjungi warung kami
-          </li>
-        </ul>
+        <li>
+          Composisi:
+          <ul>
+            <li>Tepung Beras</li>
+            <li>Santan (kelapa parut)</li>
+            <li>Daun pandan</li>
+            <li>Perasa pandan (panili, essen pewarna makanan)</li>
+          </ul>
+        </li>
+        <li>
+          Promo:
+          <ul>
+            <li>beli kelipatan 10 porsi dapat 1 porsi</li>
+            <li>Foto dan rating gmaps, min. Pembelian 5, dapat 1 porsi.</li>
+            <li>Beli 10 porsi dan foto, serata rating gmaps dapat? 2 porsi</li>
+            <li>
+              Dan mungkin ada promosi lain lagi (silahkan hubungi pembeli)
+            </li>
+          </ul>
+        </li>
+        <li>
+          Pre order:
+          <ul>
+            <li>Min. Pemesanan H-1 + uang muka (jika pesanan banyak/custom)</li>
+            <li>
+              Jika pesan lebih dari 500 pcs (100 porsi), dan jam mepet,
+              kemungkinan ada tambahan harga. (Hal ini biasanya terjadi karena
+              kapasitas kami yang hanya mampu 500 pcs, dan sehingga lebihannya
+              akan diambilkan ke penjual lain/nyewa orang, yang mana harga
+              serabi untuk pesanan akan lebih murah di kami)
+            </li>
+            <li>
+              Jika merasa kurang percaya dengan pembayaran online, silahkan
+              kunjungi warung kami
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
     <div></div>

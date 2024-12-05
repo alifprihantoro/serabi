@@ -29,7 +29,7 @@ export default function PageMenu({
 }: TArgs) {
   const TITLE = heading({
     title,
-    btn: `<a class="btn btn-primary" href="${urlShop}">${ICON_CHECKOUT}</a>`,
+    btn: `<a title="Beli via WhatsApp" class="btn btn-primary" href="${urlShop}">${ICON_CHECKOUT}</a>`,
     className: 'mb-3',
   })
 
@@ -48,10 +48,16 @@ export default function PageMenu({
             ${TITLE}
             <article class="md:p-3">${content}</article>
             <div class="leading-[60px] my-6 mx-3">
-              <a class="btn btn-primary rounded w-full" href="${urlShop}"
+              <a
+                title="Beli via WhatsApp"
+                class="btn btn-primary text-white rounded w-full"
+                href="${urlShop}"
                 >${ICON_CHECKOUT} Beli via WhatsApp</a
               >
-              <a class="btn btn-secondary rounded w-full" href="${urlShop}"
+              <a
+                title="Rating kami di Google Maps"
+                class="btn btn-secondary text-white rounded w-full"
+                href="${urlShop}"
                 >${ICON_STAR} Rating kami di Google Maps</a
               >
             </div>
