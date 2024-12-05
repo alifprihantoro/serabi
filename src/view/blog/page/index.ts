@@ -30,11 +30,11 @@ export default function Blog({
             <article class="prose prose-xl break-words max-w-md">
               ${content}
             </article>
-            <a class="btn btn-primary w-full my-6" href="${commentUrl}"
+            <a class="btn btn-primary w-full my-6 max-w-md" href="${commentUrl}"
               >Beri Komentar</a
             >
           </div>
-          <div>
+          <div class="max-w-md">
             <div class="p-3">
               ${heading({ title: 'Lihat Postingan Lainnya :' })}
               <ul class="list-disc prose pl-9 my-3">
