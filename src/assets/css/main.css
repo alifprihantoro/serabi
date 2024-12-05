@@ -21,7 +21,7 @@ p {
 }
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  @apply w-1 md:w-3;
 }
 
 /* Track */

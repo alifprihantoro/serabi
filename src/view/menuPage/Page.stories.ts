@@ -22,7 +22,7 @@ const args: TArgs = {
   title: 'serabi rasa pandan',
   content: html`
     <div
-      class="flex scrollbar w-full snap-x snap-mandatory overflow-x-scroll"
+      class="flex w-full snap-x snap-mandatory overflow-x-scroll"
       tabindex="0">
       <img
         role="img"

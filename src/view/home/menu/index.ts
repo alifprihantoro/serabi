@@ -1,4 +1,4 @@
-import { ICON_CHECKOUT } from '../../../configs/icons'
+import { ICON_CHECKOUT, ICON_MENU, ICON_MORE } from '../../../configs/icons'
 import Card from '../../global/card'
 import heading from '../../global/heading'
 
@@ -15,6 +15,14 @@ export type TArgs = {
     onsite: string
     preorder: string
   }
+}
+
+export const Layouts = (childern: string) => {
+  return html`
+    <div class="flex w-full max-w-4xl gap-4 p-3 snap-x overflow-x-scroll">
+      ${childern}
+    </div>
+  `
 }
 
 export const MenuList = (list: TList) => {
@@ -37,20 +45,18 @@ export const MenuList = (list: TList) => {
 }
 
 export default function Menu({ onsite, preorder, label }: TArgs) {
+  const LOAD_MORE = html`
+    <div class="self-center">
+      <div class="btn">${ICON_MORE}</div>
+    </div>
+  `
+
+  //TODO: add loadmore if more than 5
   const ONSITE = MenuList(onsite)
-  const PREORDER = MenuList(preorder)
+  const PREORDER = MenuList(preorder) + LOAD_MORE
 
   const BTN = (url: string) => {
-    return html`<a
-      title="More Menu"
-      class="btn btn-primary btn-circle"
-      href="${url}"
-      ><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 12 24">
-        <path
-          fill="currentColor"
-          fill-rule="evenodd"
-          d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" /></svg
-    ></a>`
+    return html`<a title="More Menu" class="btn" href="${url}">${ICON_MENU}</a>`
   }
 
   const LISTS =
@@ -59,17 +65,14 @@ export default function Menu({ onsite, preorder, label }: TArgs) {
       id: 'menu',
       title: 'Menu Makan di Tempat',
       btn: BTN(label.onsite),
-      content: html`<div class="md:flex w-full max-w-4xl gap-4 p-3">
-        ${ONSITE}
-      </div>`,
+      //TODO: merge content
+      content: Layouts(ONSITE),
     }) +
     '</br>' +
     heading({
       title: 'Menu Pre-order',
       btn: BTN(label.preorder),
-      content: html`<div class="md:flex w-full max-w-4xl gap-4 p-3">
-        ${PREORDER}
-      </div>`,
+      content: Layouts(PREORDER),
     })
 
   return html` <div>${LISTS}</div> `

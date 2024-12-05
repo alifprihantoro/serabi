@@ -1,9 +1,9 @@
-import { ICON_CHECKOUT, ICON_STAR } from '../../configs/icons'
+import { ICON_CHECKOUT, ICON_COMMENT, ICON_STAR } from '../../configs/icons'
 import heading from '../global/heading'
 import Layouts from '../global/layouts'
 import About, { type TArgs as TAbout } from '../home/about'
 import contact, { type TArgs as TContact } from '../home/contact'
-import { MenuList, type TList } from '../home/menu'
+import { MenuList, type TList ,Layouts as MenuLayouts} from '../home/menu'
 
 export type TArgs = {
   title: string
@@ -46,7 +46,7 @@ export default function PageMenu({
         <div class="md:flex max-md:p-3">
           <div class="w-full max-w-md rounded">
             ${TITLE}
-            <article class="md:p-3">${content}</article>
+            <article class="prose prose-xl md:p-3">${content}</article>
             <div class="leading-[60px] my-6 mx-3">
               <a
                 title="Beli via WhatsApp"
@@ -56,9 +56,15 @@ export default function PageMenu({
               >
               <a
                 title="Rating kami di Google Maps"
-                class="btn btn-secondary rounded w-full"
+                class="btn rounded w-full"
                 href="${urlShop}"
                 >${ICON_STAR} Rating kami di Google Maps</a
+              >
+              <a
+                title="Rating kami di Google Maps"
+                class="btn rounded w-full"
+                href="${urlShop}"
+                >${ICON_COMMENT} Comment on this Blog</a
               >
             </div>
           </div>
@@ -67,7 +73,7 @@ export default function PageMenu({
               class="capitalize font-extrabold text-xl mb-6 border border-b-black border-spacing-3">
               Menu yang bisa dibeli ditempat :
             </h2>
-            ${MENU}
+            ${MenuLayouts(MENU)}
           </div>
         </div>
         <div class="md:flex">${About(aboutArgs) + contact(contactArgs)}</div>

@@ -8,8 +8,8 @@ const renderLink = (List: TLinksNavObj[]) => {
     const LINK = Link({
       name: `${icon}<span>${name}</span>`,
       url,
-      className: `m-1 capitalize font-Rokkit font-bold flex
-        justify-center items-center flex-col md:flex-row `,
+      className: `capitalize font-Rokkit font-bold flex
+        justify-center items-center flex-col md:flex-row [&>svg]:w-3 w-fit`,
       Attr: `data-tip="${name}"`,
     })
 
@@ -24,15 +24,15 @@ export default function NavBottom(List: TLinksNav, isHome?: boolean) {
   const LINK = isHome ? renderLink(List.home) : renderLink(List.other)
   return html`
     <nav
-      class="fixed bottom-0 left-0 z-50 w-full
+      class="fixed bottom-0 left-0 z-50 md:w-full
         flex justify-center items-center
         md:static md:justify-end md:items-end
         "
       title="Navigasi Utama"
       data-aos="zoom-in">
-      <div class="w-fit h-fit m-auto md:mr-0">
+      <div class="w-screen md:w-fit h-fit m-auto md:mr-0">
         <ul
-          class="menu menu-xs md:menu-md menu-horizontal bg-primary md:bg-transparent rounded-box align-middle">
+          class="menu menu-xs md:menu-md menu-horizontal bg-primary md:bg-transparent align-middle w-full gap-3">
           ${LINK}
         </ul>
       </div>
