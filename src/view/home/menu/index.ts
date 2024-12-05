@@ -27,7 +27,7 @@ export const MenuList = (list: TList) => {
           name: name,
         },
         btn: {
-          name: `${ICON_CHECKOUT}Order`,
+          name: `${ICON_CHECKOUT}Beli`,
           url: url,
         },
         title: name,

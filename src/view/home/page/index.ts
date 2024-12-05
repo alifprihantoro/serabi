@@ -1,5 +1,4 @@
 import Layouts from '../../global/layouts'
-import WaBtn from '../../global/waBtn'
 import About, { type TArgs as TAbout } from '../about'
 import contact, { type TArgs as TContact } from '../contact'
 import Heroes, { type TArgs as THeroes } from '../heroes'
@@ -18,13 +17,11 @@ export default function HomePage({
   menuArgs,
   aboutArgs,
   contactArgs,
-  telp,
 }: TArgs) {
   return Layouts({
     childern: html`
       ${Heroes(heroesArgs) + Menu(menuArgs)}
       <div class="md:flex">${About(aboutArgs) + contact(contactArgs)}</div>
-      ${WaBtn(telp)}
     `,
     isHome: true,
   })

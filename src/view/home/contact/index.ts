@@ -49,7 +49,7 @@ export default function contact({
       <div class="mb-3">${CONTENT}</div>
       <iframe
         title="lokasi ${maps}"
-        class="w-full mb-3 px-3"
+        class="w-full mb-3 px-3 h-96"
         id="gmap_canvas"
         src="${URL_MAP}"
         frameborder="0"
