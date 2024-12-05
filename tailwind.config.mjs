@@ -1,4 +1,5 @@
-const themes = require('daisyui/src/theming/themes')
+import daisyui from 'daisyui'
+import typograph from '@tailwindcss/typography'
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -18,13 +19,12 @@ export default {
     themes: [
       {
         light: {
-          ...themes['cupcake'],
-          primary: '#53904e',
+          primary: '#038811',
           secondary: '#784b2c',
         },
       },
     ],
   },
-  // eslint-disable-next-line no-undef
-  plugins: [require('@tailwindcss/typography'), require('daisyui')],
+
+  plugins: [typograph,daisyui],
 }
