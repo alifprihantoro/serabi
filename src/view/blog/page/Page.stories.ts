@@ -8,6 +8,19 @@ const args: TArgs = {
   commentUrl: '/',
   title: 'Jelajah Kuliner Ambarawa, Semarang, dan Salatiga',
   contactArgs,
+  breadCrumb: html`
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/blog">Blog</a>
+    </li>
+    <li>
+      <a href="/blog/jelajah-kuliner-ambarawa-semarang-dan-salatiga"
+        >Jelajah Kuliner Ambarawa, Semarang, dan Salatiga</a
+      >
+    </li>
+  `,
   content: html`
     <img
       alt="gambar serabi rasa pandan"
