@@ -24,7 +24,7 @@ export default function Card({ img, btn, title, description }: TArgs) {
   /* prettier-ignore-end */
 
   return html`
-    <div class="card card-compact min-w-32 max-w-32 md:max-w-59 shadow-xl mb-3">
+    <div class="card card-compact w-full max-w-md md:max-w-59 shadow-xl mb-3">
       <figure>
         <img src="${img.url}" alt="${img.alt}" />
       </figure>
