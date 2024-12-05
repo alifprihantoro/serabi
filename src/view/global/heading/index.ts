@@ -23,7 +23,7 @@ export default function heading({
   }
   return html`
     <h2
-      class="text-2xl font-thin flex bg-primary/10 p-3 my-3 justify-start ${className ||
+      class="text-2xl font-thin flex bg-primary/10 p-3 my-3 justify-start text-primary ${className ||
       ''}"
       id="${id}">
       <span class="self-center font-bold uppercase mr-auto"> ${title} </span>

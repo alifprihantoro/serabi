@@ -43,7 +43,7 @@ export default function Menu({ onsite, preorder, label }: TArgs) {
   const BTN = (url: string) => {
     return html`<a
       title="More Menu"
-      class="btn btn-primary text-white btn-circle"
+      class="btn btn-primary btn-circle"
       href="${url}"
       ><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 12 24">
         <path
@@ -58,7 +58,6 @@ export default function Menu({ onsite, preorder, label }: TArgs) {
     heading({
       id: 'menu',
       title: 'Menu Makan di Tempat',
-      className: 'text-primary',
       btn: BTN(label.onsite),
       content: html`<div class="md:flex w-full max-w-4xl gap-4 p-3">
         ${ONSITE}
@@ -67,7 +66,6 @@ export default function Menu({ onsite, preorder, label }: TArgs) {
     '</br>' +
     heading({
       title: 'Menu Pre-order',
-      className: 'text-primary',
       btn: BTN(label.preorder),
       content: html`<div class="md:flex w-full max-w-4xl gap-4 p-3">
         ${PREORDER}

@@ -22,7 +22,6 @@ export default function About(ListOwner: TArgs) {
   ).join('')
 
   const OWNER = heading({
-    className: 'text-primary',
     content: html` <div class="block p-3">${LIST_OWNER}</div> `,
     btn: ICON_ABOUT,
     title: 'owner',

@@ -50,13 +50,13 @@ export default function PageMenu({
             <div class="leading-[60px] my-6 mx-3">
               <a
                 title="Beli via WhatsApp"
-                class="btn btn-primary text-white rounded w-full"
+                class="btn btn-primary rounded w-full"
                 href="${urlShop}"
                 >${ICON_CHECKOUT} Beli via WhatsApp</a
               >
               <a
                 title="Rating kami di Google Maps"
-                class="btn btn-secondary text-white rounded w-full"
+                class="btn btn-secondary rounded w-full"
                 href="${urlShop}"
                 >${ICON_STAR} Rating kami di Google Maps</a
               >

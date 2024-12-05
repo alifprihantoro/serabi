@@ -16,7 +16,7 @@ p {
 
 *,
 *:hover {
-  scrollbar-color: auto;
+  /* scrollbar-color: auto; */
   scroll-behavior: smooth;
 }
 /* width */

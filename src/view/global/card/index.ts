@@ -17,9 +17,7 @@ export default function Card({ img, btn, title, description }: TArgs) {
   /* prettier-ignore-start */
   const BUTTON = btn
     ? Link({
-      name: html`<button class="btn btn-primary text-white">
-          ${btn.name}
-        </button>`,
+      name: html`<button class="btn btn-primary">${btn.name}</button>`,
       url: btn.url,
     })
     : ''

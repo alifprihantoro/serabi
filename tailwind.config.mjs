@@ -16,15 +16,19 @@ export default {
     },
   },
   daisyui: {
+    base: false,
     themes: [
       {
         light: {
-          primary: '#038811',
-          secondary: '#784b2c',
+          'primary': '#038811',
+          'secondary': '#784b2c',
+          '.btn-primary': {
+            color: '#fff',
+          },
         },
       },
     ],
   },
 
-  plugins: [typograph,daisyui],
+  plugins: [typograph, daisyui],
 }

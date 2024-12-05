@@ -12,31 +12,28 @@ export type TArgs = {
   ListSosmed: TList[]
   mapsSearch: string
 }
+
+const contactList = (list: TList[]) => {
+  return list
+    .map(({ name, icon, url }) =>
+      Link({
+        url,
+        name: icon + name,
+        isTargetBlank: true,
+        className: 'btn btn-primary',
+      }),
+    )
+    .join('')
+}
+
 export default function contact({
   ListContact,
   ListSosmed,
   mapsSearch: maps,
 }: TArgs) {
-  const LIST_CONTACT = ListContact.map(({ name, icon, url }) =>
-    Link({
-      url,
-      name: icon + name,
-      isTargetBlank: true,
-      className: 'btn btn-primary text-white',
-    }),
-  ).join('')
-
-  const LIST_SOSMED = ListSosmed.map(({ name, icon, url }) =>
-    Link({
-      url,
-      name: icon + name,
-      isTargetBlank: true,
-      className: 'btn btn-primary text-white',
-    }),
-  ).join('')
-
+  const LIST_CONTACT = contactList(ListContact)
+  const LIST_SOSMED = contactList(ListSosmed)
   const CONTENT = heading({
-    className: 'text-primary',
     content: html`
       <div class="flex flex-wrap gap-3 p-3">${LIST_CONTACT + LIST_SOSMED}</div>
     `,
