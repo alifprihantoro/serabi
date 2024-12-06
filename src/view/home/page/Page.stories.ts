@@ -1,3 +1,5 @@
+import Layouts from '../../global/layouts'
+import Menu from '../menu'
 import owner from '../../../configs/links/owner'
 import Page, { type TArgs } from './'
 import type { StoryObj } from '@storybook/html'
@@ -5,12 +7,13 @@ import contactArgs from '../../home/contact/dummy'
 import menuArgs from '../../home/menu/dummy'
 import heroesArgs from '../../home/heroes/dummy'
 import { TELP } from '../../../configs/links/contact'
+import Skeleton from '../menu/skeleton'
 
 type Story = StoryObj<TArgs>
 const args: TArgs = {
   aboutArgs: owner,
   contactArgs,
-  menuArgs,
+  Menu: Menu(menuArgs),
   heroesArgs,
   telp: TELP,
 }
@@ -18,7 +21,10 @@ const args: TArgs = {
 const DEFAULT: Story = {
   args,
   render: (Args) => {
-    return Page(Args)
+    return Layouts({
+      childern: Page(Args),
+      isHome: true,
+    })
   },
 }
 export default DEFAULT
@@ -27,3 +33,5 @@ export default DEFAULT
  * to learn more about using the canvasElement to query the DOM
  */
 export const page: Story = {}
+const newArgs = { ...args, Menu: Skeleton }
+export const skeleton: Story = { args: newArgs }

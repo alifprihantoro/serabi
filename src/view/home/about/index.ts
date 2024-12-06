@@ -6,6 +6,7 @@ export type TArgs = {
   url: string
   img: string
 }[]
+//TODO: create static/dont use args just export string
 export default function About(ListOwner: TArgs) {
   const LIST_OWNER = ListOwner.map(
     ({ name, url, img }) => html`

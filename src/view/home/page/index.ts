@@ -1,12 +1,10 @@
-import Layouts from '../../global/layouts'
 import About, { type TArgs as TAbout } from '../about'
 import contact, { type TArgs as TContact } from '../contact'
 import Heroes, { type TArgs as THeroes } from '../heroes'
-import Menu, { type TArgs as TMenu } from '../menu'
 
 export type TArgs = {
   heroesArgs: THeroes
-  menuArgs: TMenu
+  Menu: string
   aboutArgs: TAbout
   contactArgs: TContact
   telp: number
@@ -14,15 +12,11 @@ export type TArgs = {
 
 export default function HomePage({
   heroesArgs,
-  menuArgs,
+  Menu,
   aboutArgs,
   contactArgs,
 }: TArgs) {
-  return Layouts({
-    childern: html`
-      ${Heroes(heroesArgs) + Menu(menuArgs)}
+  return html`
+      ${Heroes(heroesArgs) + Menu}
       <div class="md:flex">${About(aboutArgs) + contact(contactArgs)}</div>
-    `,
-    isHome: true,
-  })
-}
+    `}

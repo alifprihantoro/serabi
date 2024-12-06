@@ -44,15 +44,18 @@ export default function contact({
   return html`
     <div class="md:ml-3">
       <div class="mb-3">${CONTENT}</div>
+      <div class="w-11/12 mx-auto h-96 skeleton mb-3">
       <iframe
+        loading="lazy"
         title="lokasi ${maps}"
-        class="w-full mb-3 px-3 h-96"
+        class="w-full h-96"
         id="gmap_canvas"
         src="${URL_MAP}"
         frameborder="0"
         scrolling="no"
         marginheight="0"
         marginwidth="0"></iframe>
+      </div>
     </div>
   `
 }

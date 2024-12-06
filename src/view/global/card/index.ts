@@ -2,7 +2,6 @@ import Link from '../link'
 
 export interface TArgs {
   title: string
-  description?: string
   btn?: {
     name: string
     url: string
@@ -13,7 +12,7 @@ export interface TArgs {
     name: string
   }
 }
-export default function Card({ img, btn, title, description }: TArgs) {
+export default function Card({ img, btn, title }: TArgs) {
   /* prettier-ignore-start */
   const BUTTON = btn
     ? Link({
@@ -26,13 +25,12 @@ export default function Card({ img, btn, title, description }: TArgs) {
   /* prettier-ignore-end */
 
   return html`
-    <div class="card card-compact w-full max-w-md md:max-w-40 shadow-xl mb-3">
+    <div class="card card-compact w-40 min-w-40 shadow-xl mb-3">
       <figure class="max-h-40">
         <img src="${img.url}" alt="${img.alt}" />
       </figure>
       <div class="card-body">
         <h2 class="card-title text-xs text-wrap">${title}</h2>
-        <p>${description || ''}</p>
         <div class="card-actions justify-end">${BUTTON}</div>
       </div>
     </div>
