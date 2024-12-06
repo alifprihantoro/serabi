@@ -3,7 +3,7 @@ import typograph from '@tailwindcss/typography'
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{astro,ts}'],
+  content: ['./src/view/**/*.{astro,ts}'],
   theme: {
     extend: {
       fontFamily: {
@@ -29,6 +29,5 @@ export default {
       },
     ],
   },
-
   plugins: [typograph, daisyui],
 }

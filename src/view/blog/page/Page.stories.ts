@@ -2,9 +2,12 @@ import { IMG_SERABI } from '../../../configs/images'
 import Page, { type TArgs } from './'
 import type { StoryObj } from '@storybook/html'
 import contactArgs from '../../home/contact/dummy'
+import relatedPost from '../relatedPost'
+import Skeleton from '../relatedPost/skeleton'
 
 type Story = StoryObj<TArgs>
 const args: TArgs = {
+  relatedPost,
   commentUrl: '/',
   title: 'Jelajah Kuliner Ambarawa, Semarang, dan Salatiga',
   contactArgs,
@@ -85,3 +88,10 @@ export default DEFAULT
  * to learn more about using the canvasElement to query the DOM
  */
 export const page: Story = {}
+const skeletonArgs = {
+  ...args,
+  relatedPost: Skeleton,
+}
+export const skeleton: Story = {
+  args: skeletonArgs,
+}

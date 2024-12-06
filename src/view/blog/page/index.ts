@@ -9,6 +9,7 @@ export type TArgs = {
   commentUrl: string
   contactArgs: TContact
   breadCrumb: string
+  relatedPost: string
 }
 export default function Blog({
   content,
@@ -16,6 +17,7 @@ export default function Blog({
   commentUrl,
   contactArgs,
   breadCrumb,
+  relatedPost,
 }: TArgs) {
   const TITLE = heading({
     title,
@@ -37,19 +39,8 @@ export default function Blog({
           <div class="max-w-md">
             <div class="p-3">
               ${heading({ title: 'Lihat Postingan Lainnya :' })}
-              <ul class="list-disc prose pl-9 my-3">
-                <li>
-                  Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-                  reprehenderit enim labore.
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-                  reprehenderit enim labore.
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-                  reprehenderit enim labore.
-                </li>
+              <ul class="list-disc list-inside prose my-3 pl-3">
+                ${relatedPost}
               </ul>
             </div>
             ${contact(contactArgs)}

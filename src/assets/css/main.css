@@ -39,3 +39,7 @@ p {
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-primary;
 }
+
+.skeleton {
+  @apply bg-primary/30;
+}

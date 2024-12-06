@@ -38,9 +38,8 @@ const LOAD_MORE_LIST = Loadmore({
 
 type Story = StoryObj<TArgs>
 const args: TArgs = {
-  title: 'Kamu berada di label blog',
+  title: 'daftar artikel blog :',
   contactArgs,
-  // content: html` <div class="">${LOAD_MORE_LIST}</div> `,
   content: html` <div class="">${Skeleton}</div> `,
 }
 
@@ -55,4 +54,9 @@ export default DEFAULT
  * See https://storybook.js.org/docs/writing-stories/play-function#working-with-the-canvas
  * to learn more about using the canvasElement to query the DOM
  */
-export const page: Story = {}
+export const loadmore: Story = {
+  args: {
+    content: html` <div class="">${LOAD_MORE_LIST}</div> `,
+  },
+}
+export const skeleton: Story = {}
