@@ -5,16 +5,16 @@ import Page, { type TArgs } from './'
 import type { StoryObj } from '@storybook/html'
 import contactArgs from '../../home/contact/dummy'
 import menuArgs from '../../home/menu/dummy'
-import heroesArgs from '../../home/heroes/dummy'
 import { TELP } from '../../../configs/links/contact'
 import Skeleton from '../menu/skeleton'
+import heroesArgs from '../../../configs/heroes'
 
 type Story = StoryObj<TArgs>
 const args: TArgs = {
+  heroesArgs,
   aboutArgs: owner,
   contactArgs,
   Menu: Menu(menuArgs),
-  heroesArgs,
   telp: TELP,
 }
 
