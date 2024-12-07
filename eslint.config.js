@@ -41,6 +41,7 @@ export default [
   },
   {
     ...Lit.configs['flat/recommended'],
+    files: ['./src/view/**/*.ts'],
     rules: {
       'lit/no-template-map': 'error',
       'lit/no-invalid-html': 'error',

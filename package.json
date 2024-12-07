@@ -18,6 +18,7 @@
     "@muryp/vite-html": "^1.0.6",
     "@storybook/addon-console": "^3.0.0",
     "astro": "^4.16.12",
+    "esbuild": "^0.24.0",
     "typescript": "^5.6.3"
   },
   "devDependencies": {

@@ -9,7 +9,7 @@ const config: Targs.StorybookConfig = {
       plugins: [
         ViteMurypJsLiteral({
           minify: {
-            html: true,
+            html: false,
           },
         }),
       ],
