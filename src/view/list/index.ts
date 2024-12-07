@@ -11,6 +11,7 @@ export default function List({ content, title, contactArgs }: TArgs) {
   const TITLE = heading({
     title,
     className: 'mb-3 w-full max-w-md',
+    id:'title-list-article',
   })
   return Layouts({
     childern: html`

@@ -43,3 +43,8 @@ p {
 .skeleton {
   @apply bg-primary/30;
 }
+
+
+.nav-bottom-link {
+  @apply capitalize font-Rokkit font-bold flex justify-center items-center flex-col md:flex-row [&>svg]:w-3 w-fit;
+}

@@ -10,7 +10,7 @@ const LISTS = `${heading({
   title: 'Menu Makan di Tempat',
   btn:BTN('/#menu-onsite'),
   content:Layouts(cardSkeleton,'menu-onsite'),
-})}</br>${heading({
+})}<br/>${heading({
   title: 'Menu Pre-order',
   btn:BTN('/#menu-preorder'),
   content:Layouts(cardSkeleton,'menu-preorder'),

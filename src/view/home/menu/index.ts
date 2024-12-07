@@ -71,7 +71,7 @@ export default function Menu({ onsite, preorder, label }: TArgs) {
       //TODO: merge content
       content: Layouts(ONSITE, 'menu-onsite'),
     }) +
-    '</br>' +
+    '<br/>' +
     heading({
       title: 'Menu Pre-order',
       btn: BTN(label.preorder),

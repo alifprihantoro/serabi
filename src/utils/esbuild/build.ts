@@ -22,5 +22,5 @@ export default async function Build(input: string, output: string) {
     await build(Opts)
   }
   await bundleFile()
-  return OUT_FILE
+  return readFileSync(OUT_FILE).toString()
 }

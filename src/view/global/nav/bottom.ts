@@ -8,8 +8,7 @@ const renderLink = (List: TLinksNavObj[]) => {
     const LINK = Link({
       name: `${icon}<span>${name}</span>`,
       url,
-      className: `capitalize font-Rokkit font-bold flex
-        justify-center items-center flex-col md:flex-row [&>svg]:w-3 w-fit`,
+      className: 'nav-bottom-link',
       Attr: `data-tip="${name}"`,
     })
 

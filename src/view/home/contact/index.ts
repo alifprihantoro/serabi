@@ -40,7 +40,7 @@ export default function contact({
     btn: ICON_CONTACT,
     title: 'contact',
   })
-  const URL_MAP = `https://maps.google.com/maps?q=${maps.replace(/ /g, '%20')}&t=&z=19&ie=UTF8&iwloc=&output=embed`
+  const URL_MAP = `https://maps.google.com/maps?q=${maps.replace(/ /g, '%20')}&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=&amp;output=embed`
   return html`
     <div class="md:ml-3">
       <div class="mb-3">${CONTENT}</div>
