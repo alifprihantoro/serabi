@@ -6,12 +6,17 @@ import WaBtn from '../waBtn'
 
 type TArgs = {
   childern: string
-  isHome: boolean
+  isHome?: boolean
+  isBlogger?: boolean
 }
-export default function Layouts({ childern, isHome }: TArgs) {
+export default function Layouts({ childern, isHome, isBlogger }: TArgs) {
+  const content = isBlogger
+    ? childern
+    : Nav({ ...navArgs, isHome }) + childern + Footer(footerArgs) + WaBtn
+
   return html`
     <div class="shadow-primary/30 shadow mx-3 max-w-4xl md:m-auto">
-      ${Nav({ ...navArgs, isHome }) + childern + Footer(footerArgs) + WaBtn}
+      ${content}
     </div>
   `
 }

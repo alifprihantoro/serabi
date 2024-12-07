@@ -56,7 +56,7 @@ export default DEFAULT
  */
 export const loadmore: Story = {
   args: {
-    content: html` <div class="">${LOAD_MORE_LIST}</div> `,
+    content: html` <div>${LOAD_MORE_LIST}</div> `,
   },
 }
 export const skeleton: Story = {}

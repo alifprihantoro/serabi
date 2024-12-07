@@ -11,7 +11,7 @@ const args: TArgs = {
   commentUrl: '/',
   title: 'Jelajah Kuliner Ambarawa, Semarang, dan Salatiga',
   contactArgs,
-  breadCrumb: html`
+  listBreadcrumb: html`
     <li>
       <a href="/">Home</a>
     </li>

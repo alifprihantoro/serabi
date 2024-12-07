@@ -1,3 +1,4 @@
+import btn from './btn'
 import Card from './Card'
 
 type TList = {
@@ -22,10 +23,6 @@ export default function Loadmore({ List, isLoadmore }: TArgs) {
       },
     }),
   ).join('')
-  const BTN = isLoadmore
-    ? html`<button class="btn btn-primary w-full mb-6 mt-3" id="LoadmoreBtn">
-        Loadmore
-      </button>`
-    : ''
+  const BTN = isLoadmore ? btn : ''
   return LIST + BTN
 }

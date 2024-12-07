@@ -73,7 +73,7 @@ export default function PageMenu({
               class="capitalize font-extrabold text-xl mb-6 border border-b-black border-spacing-3">
               Menu yang bisa dibeli ditempat :
             </h2>
-            ${MenuLayouts(MENU)}
+            ${MenuLayouts(MENU,'menu-onsite')}
           </div>
         </div>
         <div class="md:flex">${About(aboutArgs) + contact(contactArgs)}</div>

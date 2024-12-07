@@ -8,7 +8,7 @@ export type TArgs = {
   title: string
   contactArgs: TContact
 }
-export default function Blog({ content, title, contactArgs }: TArgs) {
+export default function Laman({ content, title, contactArgs }: TArgs) {
   const TITLE = heading({
     title,
     className: 'mb-3 w-full max-w-md',

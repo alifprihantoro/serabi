@@ -1,5 +1,6 @@
 import heading from '../../global/heading'
 import Layouts from '../../global/layouts'
+import Link from '../../global/link'
 import contact, { type TArgs as TContact } from '../../home/contact'
 import BreadCrumb from '../breadcrumb'
 
@@ -8,7 +9,7 @@ export type TArgs = {
   title: string
   commentUrl: string
   contactArgs: TContact
-  breadCrumb: string
+  listBreadcrumb: string
   relatedPost: string
 }
 export default function Blog({
@@ -16,29 +17,35 @@ export default function Blog({
   title,
   commentUrl,
   contactArgs,
-  breadCrumb,
+  listBreadcrumb,
   relatedPost,
 }: TArgs) {
   const TITLE = heading({
     title,
     className: 'mb-3 max-w-md',
+    id: 'content',
   })
+
+  const COMENT = Link({
+    url: commentUrl,
+    name: 'Beri Komentar',
+    className: 'btn btn-primary w-full my-6 max-w-md',
+  })
+
   return Layouts({
     childern: html`
       <div class="my-6 mx-3">
         <div class="md:flex gap-6">
           <div>
-            ${BreadCrumb(breadCrumb) + TITLE}
+            ${BreadCrumb(listBreadcrumb) + TITLE}
             <article class="prose prose-xl break-words max-w-md">
               ${content}
             </article>
-            <a class="btn btn-primary w-full my-6 max-w-md" href="${commentUrl}"
-              >Beri Komentar</a
-            >
+            ${COMENT}
           </div>
           <div class="max-w-md">
             <div class="p-3">
-              ${heading({ title: 'Lihat Postingan Lainnya :' })}
+              ${heading({ title: 'Lihat Postingan Lainnya :', id: 'postTextRelated' })}
               <ul class="list-disc list-inside prose my-3 pl-3">
                 ${relatedPost}
               </ul>
