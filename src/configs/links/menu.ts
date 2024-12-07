@@ -1,3 +1,5 @@
+import { ICON_CHECKOUT } from '../icons'
+
 const onsite = [
   {
     name: 'Serabi',
@@ -37,5 +39,7 @@ const preorder = [
     url: '/p/serabi.html',
   },
 ]
+
+export const BTN_NAME = `${ICON_CHECKOUT}Beli`
 
 export default { onsite, preorder }
