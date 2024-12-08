@@ -5,6 +5,7 @@ import head from './global/head'
 import heroesArgs from '../configs/heroes'
 import contactArgs from '../view/home/contact/dummy'
 import skeleton from '../view/home/menu/skeleton'
+import ListLoadmore from '../view/list/Loadmore/Skeleton'
 import Layouts from './global/layouts'
 import MainWidget from './widget/main'
 import notFound from '../view/notFound'
@@ -15,13 +16,14 @@ import List from '../view/list'
 import menuPage from '../view/menuPage'
 import { URL_SHOP } from '../configs/links/menu'
 import { GMAPS } from '../configs/global'
+import relatedSkeleton from '../view/blog/relatedPost/skeleton'
 import relatedPost from './post/relatedPost'
 
 const home = HomePage({
   Menu: skeleton,
   telp: TELP,
   aboutArgs: owner,
-  heroesArgs,
+  heroesArgs:{...heroesArgs,isBlogger:true},
   contactArgs,
 })
 
@@ -29,11 +31,11 @@ const blog = Blog({
   title: '<data:post.title />',
   content: '<data:post.body />',
   commentUrl: 'data:post.addCommentUrl',
-  relatedPost,
   contactArgs,
   listBreadcrumb,
+  relatedPost: html`<div id="postSkeletonRelated">${relatedSkeleton}</div>
+    ${relatedPost}`,
 })
-
 const laman = Laman({
   content: '<data:post.body />',
   title: '<data:post.title />',
@@ -46,11 +48,11 @@ const mainEl = MainWidget({
     content: '<data:post.body />',
     contactArgs,
     menu: skeleton,
-    url:{
+    url: {
       shop: URL_SHOP,
       comment: 'data:post.addCommentUrl',
-      wa:TELP,
-      gmaps:GMAPS,
+      wa: TELP,
+      gmaps: GMAPS,
     },
     aboutArgs: owner,
   }),
@@ -60,7 +62,7 @@ const mainEl = MainWidget({
 
 const list = List({
   title: '<data:post.title />',
-  content: '<div id="list-article"></div>',
+  content: `<div id="list-article">${ListLoadmore}</div>`,
   contactArgs,
 })
 

@@ -68,7 +68,6 @@ export default html`
     property="article:publisher" />
   <meta content="${FB_ID}" property="fb:admins" />
   <meta content="${FB_ID}" property="fb:app_id" />
-  <meta content="en_US" property="og:locale" />
-  <meta content="en_GB" property="og:locale:alternate" />
-  <meta content="id_ID" property="og:locale:alternate" />
+  <meta content="id_ID" property="og:locale" />
+  <meta content="en_US" property="og:locale:alternate" />
 `

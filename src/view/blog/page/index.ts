@@ -1,5 +1,4 @@
 import heading from '../../global/heading'
-import Layouts from '../../global/layouts'
 import Link from '../../global/link'
 import contact, { type TArgs as TContact } from '../../home/contact'
 import BreadCrumb from '../breadcrumb'

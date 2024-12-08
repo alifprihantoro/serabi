@@ -25,7 +25,7 @@ export default function Layouts({ home, mainEl, notFound, list }: TArgs) {
       <b:if cond="data:view.isHomepage"> ${home} </b:if>
       <b:if cond="data:view.isMultipleItems and !data:view.isHomepage"> ${list} </b:if>
       ${mainEl} ${Footer(footerArgs)}
-      <b:if cond="data:view.isHomepage or data:view.isPost">
+      <b:if cond="!data:view.isError">
         <script type="text/javascript">
           /*<![CDATA[*/
           ${script}

@@ -18,7 +18,7 @@ export default function Card({ img, url, title }: TArgs) {
   return html`
     <div class="flex rounded-md w-full max-w-md md:max-w-59 shadow-xl mb-3 p-3">
       <figure class="max-w-24">
-        <a href="${url}"><img src="${img.url}" alt="${img.alt}" /></a>
+        <a href="${url}"><img class="skeleton h-24 min-w-24 w-24 object-cover" loading="lazy" role="img" src="${img.url}" alt="${img.alt}" /></a>
       </figure>
       <div class="card-body">${TITLE}</div>
     </div>

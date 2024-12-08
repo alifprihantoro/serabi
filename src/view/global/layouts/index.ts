@@ -15,7 +15,7 @@ export default function Layouts({ childern, isHome, isBlogger }: TArgs) {
     : Nav({ ...navArgs, isHome }) + childern + Footer(footerArgs) + WaBtn
 
   return html`
-    <div class="shadow-primary/30 shadow mx-3 max-w-4xl md:m-auto">
+    <div class="shadow-primary/30 shadow max-w-4xl md:m-auto">
       ${content}
     </div>
   `

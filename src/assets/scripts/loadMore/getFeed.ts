@@ -1,3 +1,5 @@
+import { MAX_LIST_ARTICLE } from '../../../configs/global'
+
 export default async function getFeed(PAGE_NUM: number, id: string) {
   const getLabelFromUrl = () => {
     if (id === 'menu-onsite') {
@@ -15,7 +17,7 @@ export default async function getFeed(PAGE_NUM: number, id: string) {
   }
 
   const getUrl = window.location.origin
-  const MAX_LIST = 5
+  const MAX_LIST = MAX_LIST_ARTICLE
   const isSearch = getUrl.match(/\?q=(.*)/)
   const ORDER_BY = 'updated' // updated, starttime
   const START_INDEX = PAGE_NUM === 1 ? 1 : PAGE_NUM * MAX_LIST - 5

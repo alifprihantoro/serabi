@@ -44,17 +44,17 @@ export default function contact({
   return html`
     <div class="md:ml-3">
       <div class="mb-3">${CONTENT}</div>
-      <div class="w-11/12 mx-auto h-96 skeleton mb-3">
-      <iframe
-        loading="lazy"
-        title="lokasi ${maps}"
-        class="w-full h-96"
-        id="gmap_canvas"
-        src="${URL_MAP}"
-        frameborder="0"
-        scrolling="no"
-        marginheight="0"
-        marginwidth="0"></iframe>
+      <div id="gmaps" class="w-11/12 mx-auto h-96 skeleton mb-3">
+        <script type="text/javascript">
+          window.addEventListener('load', function (e) {
+            var map = document.getElementById('gmaps')
+            var frame = document.createElement('iframe')
+            frame.src = '${URL_MAP}'
+            frame.title = 'lokasi ${maps}'
+            frame.className = 'w-full h-96'
+            map.appendChild(frame)
+          })
+        </script>
       </div>
     </div>
   `

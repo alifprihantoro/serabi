@@ -1,5 +1,4 @@
 import heading from '../global/heading'
-import Layouts from '../global/layouts'
 import contact, { type TArgs as TContact } from '../home/contact'
 
 export type TArgs = {
@@ -11,19 +10,14 @@ export default function List({ content, title, contactArgs }: TArgs) {
   const TITLE = heading({
     title,
     className: 'mb-3 w-full max-w-md',
-    id:'title-list-article',
+    id: 'title-list-article',
   })
-  return Layouts({
-    childern: html`
-      <div class="my-6 mx-3">
-        <div class="md:flex gap-6">
-          <div>
-            ${TITLE+content}
-          </div>
-          <div class="max-w-md">${contact(contactArgs)}</div>
-        </div>
+  return html`
+    <div class="my-6 mx-3">
+      <div class="md:flex gap-6">
+        <div>${TITLE + content}</div>
+        <div class="max-w-md">${contact(contactArgs)}</div>
       </div>
-    `,
-    isHome: false,
-  })
+    </div>
+  `
 }
