@@ -1,0 +1,6 @@
+.postTextRelated {
+  @apply list-inside my-3 pl-3;
+  ul {
+    @apply list-disc pl-3;
+  }
+}

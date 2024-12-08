@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 /* default */
 h1,
 h2,
@@ -42,9 +39,4 @@ p {
 
 .skeleton {
   @apply bg-primary/30;
-}
-
-
-.nav-bottom-link {
-  @apply capitalize font-Rokkit font-bold flex justify-center items-center flex-col md:flex-row [&>svg]:w-3 w-fit;
 }
