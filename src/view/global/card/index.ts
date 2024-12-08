@@ -26,8 +26,8 @@ export default function Card({ img, btn, title }: TArgs) {
 
   return html`
     <div class="card card-compact w-40 min-w-40 shadow-xl mb-3">
-      <figure class="skeleton h-40 w-full">
-        <img src="${img.url}" alt="${img.alt}" />
+      <figure>
+        <img class="skeleton h-40 w-full" src="${img.url}" alt="${img.alt}" />
       </figure>
       <div class="card-body">
         <h2 class="card-title text-xs text-wrap">${title}</h2>

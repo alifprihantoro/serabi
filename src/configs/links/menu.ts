@@ -41,5 +41,6 @@ const preorder = [
 ]
 
 export const BTN_NAME = `${ICON_CHECKOUT}Beli`
+export const URL_SHOP = '/#menu-onsite'
 
 export default { onsite, preorder }

@@ -34,7 +34,7 @@ export default {
     },
     {
       icon: ICON_MENU,
-      name: 'menu makanan',
+      name: 'menu',
       url: '#menu-onsite',
     },
     {
@@ -61,7 +61,7 @@ export default {
     },
     {
       icon: ICON_MENU,
-      name: 'menu makanan',
+      name: 'menu',
       url: '#menu-onsite',
     },
     {

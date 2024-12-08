@@ -22,5 +22,7 @@ export default async function Build(input: string, output: string) {
     await build(Opts)
   }
   await bundleFile()
-  return readFileSync(OUT_FILE).toString()
+  const READ = readFileSync(OUT_FILE,'utf8')
+  // eslint-disable-next-line no-useless-escape
+  return READ.replace(/html\`/gim, '\`').replace(/[\n\r]/gim, '')
 }

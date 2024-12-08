@@ -18,13 +18,13 @@ export default async function LoadMoreEvent({
   if (!ElList) {
     return
   }
-  let OLD_EL = prev || ''
+  let CONTENT = prev || ''
 
-  const [CONTENT_LIST, isNext] = await RenderLoadmore(PAGE_NUM,id)
-  OLD_EL = OLD_EL + CONTENT_LIST
+  const [NEW_CONTENT, isNext] = await RenderLoadmore(PAGE_NUM,id)
+  CONTENT = CONTENT + NEW_CONTENT
 
   if (isNext) {
-    ElList.innerHTML = OLD_EL + btn
+    ElList.innerHTML = CONTENT + btn
     const ElListBtn = document.getElementById(`${id}-loadmore-btn`)!
     ElListBtn.onclick = () => {
       LoadMoreEvent({
@@ -35,6 +35,6 @@ export default async function LoadMoreEvent({
       })
     }
   } else {
-    ElList.innerHTML = OLD_EL
+    ElList.innerHTML = CONTENT
   }
 }

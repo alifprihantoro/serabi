@@ -16,7 +16,6 @@ export default html`
         </li>
         <b:if cond="data:post.labels">
           <b:loop index="num" values="data:post.labels" var="label">
-            &amp;nbsp;&#8250;&amp;nbsp;
             <li
               itemprop="itemListElement"
               itemscope="itemscope"
@@ -24,13 +23,24 @@ export default html`
               <meta expr:content="data:num+2" itemprop="position" />
               <a
                 expr:href="data:label.url.canonical"
-                class="no-underline"
                 expr:title="data:label.name"
                 itemprop="item">
                 <span itemprop="name"><data:label.name /></span>
               </a>
             </li>
           </b:loop>
+            <li
+              itemprop="itemListElement"
+              itemscope="itemscope"
+              itemtype="https://schema.org/ListItem">
+              <meta expr:content="data:num+2" itemprop="position" />
+              <a
+                expr:href="data:post.url"
+                expr:title="data:post.title"
+                itemprop="item">
+                <span itemprop="name"><data:post.title /></span>
+              </a>
+            </li>
           <b:else />
           &amp;nbsp;&#8250;&amp;nbsp; Tidak Ada Kategori
         </b:if>

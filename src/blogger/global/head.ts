@@ -1,4 +1,4 @@
-import style from '../../assets/css/main.css?inline'
+import style from '../../assets/css/main/init.css?inline'
 import seo from './seo'
 
 export default html`

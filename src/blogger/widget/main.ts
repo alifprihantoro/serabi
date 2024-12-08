@@ -3,6 +3,7 @@ type TArgs = {
   laman: string
   menu: string
 }
+const LABEL_NAME = 'menu'
 export default function MainWidget({ blog, laman, menu }: TArgs) {
   return html`
     <b:section class="main" id="main" showaddelement="yes">
@@ -34,12 +35,15 @@ export default function MainWidget({ blog, laman, menu }: TArgs) {
           </b:if>
         </b:includable>
         <b:includable id="post" var="post">
-          <b:if cond="data:post.labels any (label => label.name == 'menu')">
-            ${menu}
-            <b:else />
-            ${blog}
+          <b:if cond="data:view.isPost">
+            <b:if
+              cond='data:post.labels any (label =&gt; label.name == "${LABEL_NAME}")'>
+              ${menu}
+              <b:else />
+              ${blog}
+            </b:if>
           </b:if>
-          <b:if cond="data:view.isPage">${laman} </b:if>
+          <b:if cond="data:view.isPage"> ${laman} </b:if>
         </b:includable>
       </b:widget>
     </b:section>

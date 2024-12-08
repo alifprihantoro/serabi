@@ -9,10 +9,13 @@ import Layouts from './global/layouts'
 import MainWidget from './widget/main'
 import notFound from '../view/notFound'
 import Blog from '../view/blog/page'
-import relatedPost from './post/relatedPost'
 import listBreadcrumb from './post/breadCrumb'
 import Laman from '../view/laman/page'
 import List from '../view/list'
+import menuPage from '../view/menuPage'
+import { URL_SHOP } from '../configs/links/menu'
+import { GMAPS } from '../configs/global'
+import relatedPost from './post/relatedPost'
 
 const home = HomePage({
   Menu: skeleton,
@@ -23,29 +26,41 @@ const home = HomePage({
 })
 
 const blog = Blog({
-  title: '<data:blog.pageTitle />',
-  content: '<data:blog.body />',
-  commentUrl: 'data:blog.addCommentUrl',
+  title: '<data:post.title />',
+  content: '<data:post.body />',
+  commentUrl: 'data:post.addCommentUrl',
   relatedPost,
   contactArgs,
   listBreadcrumb,
 })
 
 const laman = Laman({
-  content: '<data:page.body />',
-  title: '<data:page.pageTitle />',
+  content: '<data:post.body />',
+  title: '<data:post.title />',
   contactArgs,
 })
 
 const mainEl = MainWidget({
-  menu: skeleton,
+  menu: menuPage({
+    title: '<data:post.title />',
+    content: '<data:post.body />',
+    contactArgs,
+    menu: skeleton,
+    url:{
+      shop: URL_SHOP,
+      comment: 'data:post.addCommentUrl',
+      wa:TELP,
+      gmaps:GMAPS,
+    },
+    aboutArgs: owner,
+  }),
   blog,
   laman,
 })
 
-const list =List({
-  title: '<data:blog.pageTitle />',
-  content:'<div id="list-article"></div>',
+const list = List({
+  title: '<data:post.title />',
+  content: '<div id="list-article"></div>',
   contactArgs,
 })
 

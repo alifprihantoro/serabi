@@ -18,7 +18,7 @@ const args: TArgs = {
   contactArgs,
   aboutArgs: owner,
   urlShop: '/',
-  menu: menu,
+  menu,
   title: 'serabi rasa pandan',
   content: html`
     <div
