@@ -4,7 +4,6 @@ import contactArgs from '../../home/contact/dummy'
 
 type Story = StoryObj<TArgs>
 const args: TArgs = {
-  commentUrl: '/',
   title: 'Jelajah Kuliner Ambarawa, Semarang, dan Salatiga',
   contactArgs,
   content: html`

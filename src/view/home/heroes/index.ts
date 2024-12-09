@@ -12,7 +12,6 @@ export type TArgs = {
   isBlogger?: boolean
 }
 export default function Heroes({
-  img,
   title,
   description,
   button,
@@ -50,7 +49,9 @@ export default function Heroes({
     <div class="hero text-primary">
       <div class="hero-content flex-col md:flex-row">
         <figure
-          class="w-80 max-w-full h-80 rounded-lg bg-white skeleton m-auto">${IMG}</figure>
+          class="w-80 max-w-full h-80 rounded-lg bg-white skeleton m-auto">
+          ${IMG}
+        </figure>
         <div>
           <h1 class="text-5xl font-bold uppercase">${title}</h1>
           <p class="my-6 text-[#333]">${description}</p>

@@ -1,4 +1,3 @@
-import menu from '../../configs/links/menu'
 import { IMG_SERABI } from '../../configs/images'
 import Page, { type TArgs } from './'
 import type { StoryObj } from '@storybook/html'
@@ -6,6 +5,8 @@ import owner from '../../configs/links/owner'
 import contactArgs from '../home/contact/dummy'
 import heading from '../global/heading'
 import { ICON_DETAIL } from '../../configs/icons'
+import { TELP } from '../../configs/links/contact'
+import { GMAPS } from '../../configs/global'
 
 type Story = StoryObj<TArgs>
 const DETAIL_TITLE = heading({
@@ -17,8 +18,13 @@ const DETAIL_TITLE = heading({
 const args: TArgs = {
   contactArgs,
   aboutArgs: owner,
-  urlShop: '/',
-  menu,
+  url: {
+    wa: TELP,
+    shop: '#',
+    gmaps: GMAPS,
+    comment: '#',
+  },
+  menu: '',
   title: 'serabi rasa pandan',
   content: html`
     <div

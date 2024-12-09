@@ -22,10 +22,6 @@ export const card: Story = {
       control: 'text',
       description: 'title card.',
     },
-    description: {
-      control: 'text',
-      description: 'description card.',
-    },
     img: {
       control: 'object',
       description: 'image card.',
