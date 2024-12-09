@@ -2,15 +2,8 @@ name: "Build"
 
 on:
   push:
-    branches:
-      - master
-    paths:
-      - 'src/**/*.ts'
-      - '!src/**/*.d.ts'
-      - 'src/**/*.css'
-      - 'tailwind.config.mjs'
-      - 'postcss.config.cjs'
-      - 'astro.config.mjs'
+    tags:
+      - 'v*'
   workflow_dispatch:
     inputs:
       title:
