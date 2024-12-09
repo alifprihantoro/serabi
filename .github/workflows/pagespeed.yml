@@ -5,11 +5,10 @@ on:
     inputs:
       my_input:
         description: 'pagespeed'
-        required: true
+        required: false
 
 jobs:
-  chromatic:
-    name: Run Chromatic
+  pagespeed:
     runs-on: ubuntu-latest
     steps:
       - name: Running Page Speed Insights
