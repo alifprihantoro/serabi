@@ -11,13 +11,33 @@ on:
         description: 'testing e2e'
         required: true
 
+permissions:
+  contents: read
+
 jobs:
+  lint:
+    uses: ./.github/workflows/lint.yml
   chromatic:
-    name: Run Chromatic
+    needs: lint
     runs-on: ubuntu-latest
     steps:
-      - name: linter
-        uses: ./.github/workflows/lint.yml
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install
+      - name: eslint
+        run: pnpm lint
       - name: Run Chromatic
         uses: chromaui/action@latest
         with:

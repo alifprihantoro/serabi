@@ -17,16 +17,32 @@ on:
         description: 'testing e2e'
         required: false
 
+permissions:
+  contents: write
+  discussions: write
+
 jobs:
-  install:
-    name: Install Project
-    permissions:
-      contents: write
-      discussions: write
+  build:
     runs-on: ubuntu-latest
+    needs: lint
     steps:
-      - name: linter
-        uses: ./.github/workflows/lint.yml
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install
+      - name: eslint
+        run: pnpm lint
       - name: build blogger template
         run: pnpm build
       - name: Release with Notes
