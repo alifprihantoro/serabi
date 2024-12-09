@@ -1,4 +1,4 @@
-name: "Chromatic"
+name: "Build"
 
 on:
   push:
@@ -13,9 +13,9 @@ on:
       - 'astro.config.mjs'
   workflow_dispatch:
     inputs:
-      my_input:
+      title:
         description: 'testing e2e'
-        required: true
+        required: false
 
 jobs:
   install:
@@ -25,43 +25,14 @@ jobs:
       discussions: write
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
-      - name: Install dependencies
-        run: pnpm install
-  build:
-    name: Build Project
-    needs: install
-    runs-on: ubuntu-latest
-    steps:
+      - name: linter
+        uses: ./.github/workflows/lint.yml
       - name: build blogger template
         run: pnpm build
-      - name: build storybook
-        run: pnpm build-storybook
-      - uses: montudor/action-zip@v1
-        with:
-          args: zip -qq -r storybook-static.zip storybook-static
-  released:
-    name: Released Project
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
       - name: Release with Notes
         uses: softprops/action-gh-release@v2
         with:
           files: |
             dist/blogger.xml
-            storybook-static.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
