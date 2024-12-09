@@ -6,7 +6,7 @@
     "dev": "astro build",
     "start": "astro dev",
     "lint": "eslint ./src/**/*.ts",
-    "build": "pnpm lint && astro check && astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "story:dev": "storybook dev -p 6006 --no-open",

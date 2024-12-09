@@ -1,4 +1,5 @@
 import heading from '../../global/heading'
+import Layouts from '../../global/layouts'
 import contact, { type TArgs as TContact } from '../../home/contact'
 
 // TODO: isBlank pages
@@ -11,9 +12,10 @@ export default function Laman({ content, title, contactArgs }: TArgs) {
   const TITLE = heading({
     title,
     className: 'mb-3 w-full max-w-md',
-    id:'content',
+    id: 'content',
   })
-  return html`
+  return Layouts({
+    childern: html`
       <div class="my-6 mx-3">
         <div class="md:flex gap-6">
           <div>
@@ -25,4 +27,6 @@ export default function Laman({ content, title, contactArgs }: TArgs) {
           <div class="max-w-md">${contact(contactArgs)}</div>
         </div>
       </div>
-    `}
+    `,
+  })
+}

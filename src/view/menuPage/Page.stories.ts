@@ -7,6 +7,7 @@ import heading from '../global/heading'
 import { ICON_DETAIL } from '../../configs/icons'
 import { TELP } from '../../configs/links/contact'
 import { GMAPS } from '../../configs/global'
+import Layouts from '../global/layouts'
 
 type Story = StoryObj<TArgs>
 const DETAIL_TITLE = heading({
@@ -92,7 +93,9 @@ const args: TArgs = {
 const DEFAULT: Story = {
   args,
   render: (Args) => {
-    return Page(Args)
+    return Layouts({
+      childern: Page(Args),
+    })
   },
 }
 export default DEFAULT
