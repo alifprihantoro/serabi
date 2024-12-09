@@ -1,6 +1,7 @@
 import Page, { type TArgs } from './'
 import type { StoryObj } from '@storybook/html'
 import contactArgs from '../../home/contact/dummy'
+import Layouts from '../../global/layouts'
 
 type Story = StoryObj<TArgs>
 const args: TArgs = {
@@ -36,7 +37,9 @@ const args: TArgs = {
 const DEFAULT: Story = {
   args,
   render: (Args) => {
-    return Page(Args)
+    return Layouts({
+      childern: Page(Args),
+    })
   },
 }
 export default DEFAULT
