@@ -1,4 +1,5 @@
 import heading from '../../global/heading'
+import Layouts from '../../global/layouts'
 import Link from '../../global/link'
 import contact, { type TArgs as TContact } from '../../home/contact'
 import BreadCrumb from '../breadcrumb'
@@ -31,26 +32,26 @@ export default function Blog({
     className: 'btn btn-primary w-full my-6 max-w-md',
   })
 
-  return html`
-    <div class="my-6 mx-3">
-      <div class="md:flex gap-6">
-        <div>
-          ${BreadCrumb(listBreadcrumb) + TITLE}
-          <article class='article'>
-            ${content}
-          </article>
-          ${COMENT}
-        </div>
-        <div class="max-w-md">
-          <div class="p-3">
-            ${heading({ title: 'Lihat Postingan Lainnya :' })}
-            <div class="postTextRelated" id="postTextRelated">
-              ${relatedPost}
-            </div>
+  return Layouts({
+    childern: html`
+      <div class="my-6 mx-3">
+        <div class="md:flex gap-6">
+          <div>
+            ${BreadCrumb(listBreadcrumb) + TITLE}
+            <article class="article">${content}</article>
+            ${COMENT}
           </div>
-          ${contact(contactArgs)}
+          <div class="max-w-md">
+            <div class="p-3">
+              ${heading({ title: 'Lihat Postingan Lainnya :' })}
+              <div class="postTextRelated" id="postTextRelated">
+                ${relatedPost}
+              </div>
+            </div>
+            ${contact(contactArgs)}
+          </div>
         </div>
       </div>
-    </div>
-  `
+    `,
+  })
 }

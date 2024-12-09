@@ -1,10 +1,13 @@
+import Layouts from '../global/layouts'
 import NotFoundPage from './'
 import type { StoryObj } from '@storybook/html'
 
 type Story = StoryObj<unknown>
 const DEFAULT: Story = {
   render: () => {
-    return NotFoundPage
+    return Layouts({
+      childern: NotFoundPage,
+    })
   },
 }
 export default DEFAULT

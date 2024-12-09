@@ -4,6 +4,7 @@ import contactArgs from '../home/contact/dummy'
 import Skeleton from './Loadmore/Skeleton'
 import Loadmore from './Loadmore'
 import { IMG_SERABI } from '../../configs/images'
+import Layouts from '../global/layouts'
 
 const LOAD_MORE_LIST = Loadmore({
   List: [
@@ -46,7 +47,9 @@ const args: TArgs = {
 const DEFAULT: Story = {
   args,
   render: (Args) => {
-    return Page(Args)
+    return Layouts({
+      childern: Page(Args),
+    })
   },
 }
 export default DEFAULT
