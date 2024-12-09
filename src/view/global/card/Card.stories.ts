@@ -1,10 +1,17 @@
 import Card, { type TArgs } from './'
 import type { StoryObj } from '@storybook/html'
 import args from './dummy'
+import Skeleton from './skeleton'
 
 type Story = StoryObj<TArgs>
 
-const DEFAULT: Story = {
+const DEFAULT: Story = {}
+export default DEFAULT
+/*
+ * See https://storybook.js.org/docs/writing-stories/play-function#working-with-the-canvas
+ * to learn more about using the canvasElement to query the DOM
+ */
+export const card: Story = {
   args,
   argTypes: {
     btn: {
@@ -15,10 +22,6 @@ const DEFAULT: Story = {
       control: 'text',
       description: 'title card.',
     },
-    description: {
-      control: 'text',
-      description: 'description card.',
-    },
     img: {
       control: 'object',
       description: 'image card.',
@@ -28,9 +31,8 @@ const DEFAULT: Story = {
     return Card(Args)
   },
 }
-export default DEFAULT
-/*
- * See https://storybook.js.org/docs/writing-stories/play-function#working-with-the-canvas
- * to learn more about using the canvasElement to query the DOM
- */
-export const card: Story = {}
+export const skeleton: Story = {
+  render: () => {
+    return Skeleton
+  },
+}

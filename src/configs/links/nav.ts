@@ -35,7 +35,7 @@ export default {
     {
       icon: ICON_MENU,
       name: 'menu',
-      url: '#menu',
+      url: '#menu-onsite',
     },
     {
       icon: ICON_BLOG,
@@ -58,6 +58,11 @@ export default {
       icon: ICON_CONTACT,
       name: 'contact',
       url: '/p/contact.html',
+    },
+    {
+      icon: ICON_MENU,
+      name: 'menu',
+      url: '#menu-onsite',
     },
     {
       icon: ICON_BLOG,

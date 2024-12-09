@@ -1,4 +1,4 @@
-import '../src/assets/css/main.css'
+import '../src/assets/css/main/init.css'
 import '../src/assets/css/fonts.css'
 import { withThemeByDataAttribute } from '@storybook/addon-themes'
 import { DocsPage } from '@storybook/addon-docs/blocks'

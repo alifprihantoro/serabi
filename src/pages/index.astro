@@ -1,4 +1,6 @@
 ---
+import TemplateBlogger from '../blogger/main'
+import { writeFileSync } from 'fs'
 
+writeFileSync('./dist/blogger.xml', TemplateBlogger, { encoding: 'utf8' })
 ---
-

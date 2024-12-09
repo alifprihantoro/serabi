@@ -1,8 +1,8 @@
 export default function bloggerHref(VAR: string) {
-  if (VAR.match(/^\/.*/)) {
-    return `expr:href='data:blog.homepageUrl+${VAR}'`
-  }
-  if (VAR.match(/^https?:\/\//) || VAR.match(/^mailto:/)) {
+  // if (VAR.match(/^\/.*/)) {
+  //   return `expr:href="data:blog.canonicalHomepageUrl + '${VAR}'"`
+  // }
+  if (VAR.match(/^https?:\/\//) || VAR.match(/^mailto:/) || VAR.match(/^\//) || VAR.match(/^#/)) {
     return `href='${VAR}'`
   }
   return `expr:href='${VAR}'`

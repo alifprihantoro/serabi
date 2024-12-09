@@ -1,0 +1,21 @@
+name: "Chromatic"
+
+on:
+  workflow_dispatch:
+    inputs:
+      my_input:
+        description: 'pagespeed'
+        required: true
+
+jobs:
+  chromatic:
+    name: Run Chromatic
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running Page Speed Insights
+        uses: jakepartusch/psi-action@v1.3
+        id: psi
+        with:
+          url: "https://serabingampinbuyuni.biz.id/?m=1"
+          threshold: 70
+          key: ${{ secrets.APIKEY }}

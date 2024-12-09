@@ -6,6 +6,7 @@ export type TArgs = {
   url: string
   img: string
 }[]
+//TODO: create static/dont use args just export string
 export default function About(ListOwner: TArgs) {
   const LIST_OWNER = ListOwner.map(
     ({ name, url, img }) => html`
@@ -22,7 +23,6 @@ export default function About(ListOwner: TArgs) {
   ).join('')
 
   const OWNER = heading({
-    className: 'text-primary',
     content: html` <div class="block p-3">${LIST_OWNER}</div> `,
     btn: ICON_ABOUT,
     title: 'owner',

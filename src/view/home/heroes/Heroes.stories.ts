@@ -1,6 +1,6 @@
 import Heroes, { type TArgs } from './'
 import type { StoryObj } from '@storybook/html'
-import args from './dummy'
+import args from '../../../configs/heroes'
 
 type Story = StoryObj<TArgs>
 const DEFAULT: Story = {

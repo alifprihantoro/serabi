@@ -1,0 +1,3 @@
+.article {
+  @apply prose prose-xl break-words w-full md:min-w-96 max-w-md;
+}

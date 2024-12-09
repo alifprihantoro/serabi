@@ -7,9 +7,10 @@ interface TArgs {
   className?: string
   rel?: string
   Attr?: string
+  title?: string
 }
-const isBlogger = import.meta.env.BLOGGER === 'true'
 export default function Link({
+  title,
   name,
   url,
   isTargetBlank,
@@ -17,12 +18,15 @@ export default function Link({
   rel,
   Attr,
 }: TArgs) {
-  const href = isBlogger ? bloggerHref(url) : `href="${url}"`
+  const href = bloggerHref(url)
   const REL = rel ? `rel="${rel}"` : ''
   const CLASS = className ? `class="${className}"` : ''
-  return `
+  return html`
     <a
-      ${href + REL + CLASS}
+      title="${title || 'url'}"
+      ${href}
+      ${REL}
+      ${CLASS}
       ${isTargetBlank ? 'target="_blank"' : ''}
       ${Attr || ''}
       >${name}</a
