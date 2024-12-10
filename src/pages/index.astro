@@ -1,6 +1,29 @@
 ---
-import TemplateBlogger from '../blogger/main'
+import bloggerContent from '../blogger/main'
 import { writeFileSync } from 'fs'
+import { minify } from 'html-minifier'
 
-writeFileSync('./dist/blogger.xml', TemplateBlogger, { encoding: 'utf8' })
+const LOC = './dist/blogger.xml'
+const MINIFY =
+  import.meta.env.MODE === 'development'
+    ? bloggerContent
+    : minify(bloggerContent, {
+        keepClosingSlash: true,
+        caseSensitive: true,
+        removeAttributeQuotes: false,
+        collapseWhitespace: true,
+        conservativeCollapse: true,
+        preserveLineBreaks: false,
+        removeTagWhitespace: false,
+        collapseInlineTagWhitespace: true,
+        minifyJS: false,
+        minifyCSS: false,
+        quoteCharacter: "'",
+        html5: true,
+        removeComments: true,
+        ignoreCustomComments: [/!/gim, /</gim],
+        ignoreCustomFragments: [/<!\[CDATA\[/, /<b:/, /<\/b:/],
+      })
+
+writeFileSync(LOC, MINIFY, { encoding: 'utf8' })
 ---

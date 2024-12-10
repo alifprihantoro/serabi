@@ -1,6 +1,5 @@
-// @ts-check
 import { defineConfig } from 'astro/config'
-import { murypAstroMinify } from '@muryp/vite-html'
+import { murypAstroMinify, ViteMurypJsLiteral } from '@muryp/vite-html'
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,13 +9,13 @@ export default defineConfig({
         external: [/^myscripts.*/],
       },
     },
+    plugins: [
+      ViteMurypJsLiteral({
+        minify: {
+          html: false,
+          css: false,
+        },
+      }),
+    ],
   },
-  integrations: [
-    murypAstroMinify({
-      minify: {
-        css: false,
-        html: false,
-      },
-    }),
-  ],
 })

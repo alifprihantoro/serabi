@@ -23,7 +23,7 @@ const home = HomePage({
   Menu: skeleton,
   telp: TELP,
   aboutArgs: owner,
-  heroesArgs:{...heroesArgs,isBlogger:true},
+  heroesArgs: { ...heroesArgs, isBlogger: true },
   contactArgs,
 })
 
@@ -73,6 +73,7 @@ const CONTENT = Layouts({
   list,
 })
 export default html`
+  ${'<!DOCTYPE html>'}
   <html
     lang="en"
     xmlns="http://www.w3.org/1999/xhtml"
