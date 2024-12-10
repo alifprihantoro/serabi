@@ -18,10 +18,10 @@ export default function Heroes({
   isBlogger,
 }: TArgs) {
   const LINK = Link({
-    name: html`<button class="btn btn-primary uppercase text-white">
-      ${button.name}
-    </button>`,
+    name: button.name,
+    title: 'pesan sekarang',
     url: button.url,
+    className: 'btn btn-primary uppercase text-white',
   })
 
   const imgEl = (url: string) => html`
@@ -53,8 +53,8 @@ export default function Heroes({
           ${IMG}
         </figure>
         <div>
-          <h1 class="text-5xl font-bold uppercase">${title}</h1>
-          <p class="my-6 text-[#333]">${description}</p>
+          <h1 tabindex="0" class="text-5xl font-bold uppercase">${title}</h1>
+          <p tabindex="0" class="my-6 text-[#333]">${description}</p>
           ${LINK}
         </div>
       </div>

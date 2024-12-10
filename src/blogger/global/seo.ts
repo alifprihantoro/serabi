@@ -50,9 +50,11 @@ export default html`
   <meta content="blog" property="og:type" />
   <b:if cond="data:blog.postImageUrl">
     <meta expr:content="data:blog.postImageUrl" property="og:image" />
+    <link rel="preload" as="image" expr:href="data:blog.postImageUrl" />
     <b:else />
     <b:if cond="data:blog.postImageThumbnailUrl">
       <meta expr:content="data:blog.postThumbnailUrl" property="og:image" />
+      <link rel="preload" as="image" expr:href="data:blog.postThumbnailUrl" />
       <b:else />
       <meta content="${IMG_URL}" property="og:image" /> </b:if
   ></b:if>

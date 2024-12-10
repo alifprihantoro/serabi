@@ -1,4 +1,4 @@
-const SIZE_SERABI = 's450-rw'
+const SIZE_SERABI = 's250-rw'
 const SIZE_SERABI_MIN = 's100-rw'
 const SIZE_AUTHOR = 's100-rw'
 export const IMG_SERABI =

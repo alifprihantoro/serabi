@@ -22,7 +22,8 @@ export default function Blog({
   const TITLE = heading({
     title,
     className: 'mb-3 max-w-md',
-    id: 'content',
+    id: 'main-content',
+    isH1: true,
   })
 
   const COMENT = Link({
@@ -36,7 +37,7 @@ export default function Blog({
       <div class="md:flex gap-6">
         <div>
           ${BreadCrumb(listBreadcrumb) + TITLE}
-          <article class="article">${content}</article>
+          <article tabindex="0" class="article">${content}</article>
           ${COMENT}
         </div>
         <div class="max-w-md">

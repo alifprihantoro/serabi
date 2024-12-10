@@ -3,7 +3,7 @@ import Nav from '../nav'
 import navArgs from '../../global/nav/dummy'
 import footerArgs from '../../global/footer/dummy'
 import WaBtn from '../waBtn'
-import tabBtn from '../tabBtn'
+import tabBtn from '../skipLink'
 
 type TArgs = {
   childern: string

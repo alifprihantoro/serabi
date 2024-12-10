@@ -14,7 +14,7 @@ import listBreadcrumb from './post/breadCrumb'
 import Laman from '../view/laman/page'
 import List from '../view/list'
 import menuPage from '../view/menuPage'
-import { GMAPS, WA_MENU_URL } from '../configs/global'
+import { GMAPS_REVIEW, WA_MENU_URL } from '../configs/global'
 import relatedSkeleton from '../view/blog/relatedPost/skeleton'
 import relatedPost from './post/relatedPost'
 
@@ -51,7 +51,7 @@ const mainEl = MainWidget({
       shop: WA_MENU_URL,
       comment: 'data:post.addCommentUrl',
       wa: TELP,
-      gmaps: GMAPS,
+      gmaps: GMAPS_REVIEW,
     },
     aboutArgs: owner,
   }),

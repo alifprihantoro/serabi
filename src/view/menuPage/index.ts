@@ -32,6 +32,7 @@ export default function PageMenu({
     btn: `<a title="Beli via WhatsApp" class="btn btn-primary" href="${url.shop}">${ICON_CHECKOUT}</a>`,
     className: 'mb-3',
     id: 'menu',
+    isH1:true,
   })
   const COMMENT_BLOGGER = Link({
     name:`${ICON_COMMENT} Comment on this Blog`,
@@ -42,9 +43,9 @@ export default function PageMenu({
   return html`
     <div>
       <div class="md:flex max-md:p-3">
-        <div class="w-full max-w-md rounded">
+        <div id="#main-content" class="w-full max-w-md rounded">
           ${TITLE}
-          <article class="prose prose-xl md:p-3">${content}</article>
+          <article tabindex="0" class="prose prose-xl md:p-3">${content}</article>
           <div class="my-6 mx-3">
             <a
               title="Beli via WhatsApp"
