@@ -1,5 +1,5 @@
 import Footer from '../../view/global/footer'
-import Layout from '../../view/global/layouts'
+import ViewLayout from '../../view/global/layouts'
 import Nav from '../../view/global/nav'
 import navArgs from '../../view/global/nav/dummy'
 import footerArgs from '../../view/global/footer/dummy'
@@ -11,9 +11,10 @@ type TArgs = {
   notFound: string
   list: string
 }
-const script = await Build('loadMore/index.ts', 'loadmore.js')
-export default function Layouts({ home, mainEl, notFound, list }: TArgs) {
-  return Layout({
+const LoadmoreScript = await Build('loadMore/index.ts', 'loadmore.js')
+const AfterLoadScript = await Build('afterLoad.ts', 'afterLoad.js')
+export default function BloggerLayouts({ home, mainEl, notFound, list }: TArgs) {
+  return ViewLayout({
     isBlogger: true,
     childern: html`
       <b:if cond="data:view.isHomepage">
@@ -28,10 +29,16 @@ export default function Layouts({ home, mainEl, notFound, list }: TArgs) {
       <b:if cond="!data:view.isError">
         <script type="text/javascript">
           /*<![CDATA[*/
-          ${script}
+          ${LoadmoreScript}
           /*]]>*/
         </script>
       </b:if>
+      <div id="google-fonts"></div>
+        <script type="text/javascript">
+          /*<![CDATA[*/
+          ${AfterLoadScript}
+          /*]]>*/
+        </script>
     `,
   })
 }

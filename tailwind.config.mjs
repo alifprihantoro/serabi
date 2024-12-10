@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         Lato: ['Lato', 'sans-serif'],
         Rokkit: ['Rokkitt', 'serif'],
+        Merinda: ['Merienda', 'serif'],
       },
       boxShadow: {
         center: '0 0 15px 3px blur',

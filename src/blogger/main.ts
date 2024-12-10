@@ -6,7 +6,7 @@ import heroesArgs from '../configs/heroes'
 import contactArgs from '../view/home/contact/dummy'
 import skeleton from '../view/home/menu/skeleton'
 import ListLoadmore from '../view/list/Loadmore/Skeleton'
-import Layouts from './global/layouts'
+import BloggerLayouts from './global/layouts'
 import MainWidget from './widget/main'
 import notFound from '../view/notFound'
 import Blog from '../view/blog/page'
@@ -65,7 +65,7 @@ const list = List({
   contactArgs,
 })
 
-const CONTENT = Layouts({
+const CONTENT = BloggerLayouts({
   home,
   mainEl,
   notFound,
