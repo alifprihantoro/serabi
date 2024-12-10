@@ -49,7 +49,7 @@ export default function PageMenu({
             <a
               title="Beli via WhatsApp"
               class="btn btn-primary rounded w-full mb-3"
-              href="https://wa.me/${url.wa}"
+              href="${url.shop}"
               >${ICON_CHECKOUT} Beli via WhatsApp</a
             >
             <a

@@ -6,7 +6,7 @@ import contactArgs from '../home/contact/dummy'
 import heading from '../global/heading'
 import { ICON_DETAIL } from '../../configs/icons'
 import { TELP } from '../../configs/links/contact'
-import { GMAPS } from '../../configs/global'
+import { GMAPS, WA_MENU_URL } from '../../configs/global'
 import Layouts from '../global/layouts'
 
 type Story = StoryObj<TArgs>
@@ -21,7 +21,7 @@ const args: TArgs = {
   aboutArgs: owner,
   url: {
     wa: TELP,
-    shop: '#',
+    shop: WA_MENU_URL,
     gmaps: GMAPS,
     comment: '#',
   },

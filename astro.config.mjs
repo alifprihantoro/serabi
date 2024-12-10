@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config'
-import { murypAstroMinify, ViteMurypJsLiteral } from '@muryp/vite-html'
+import { ViteMurypJsLiteral } from '@muryp/vite-html'
 
 // https://astro.build/config
 export default defineConfig({
