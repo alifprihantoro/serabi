@@ -1,13 +1,14 @@
+import { IMG_SERABI_MIN } from '../../configs/images'
+
 const FB_ID = 'alifprihantoro'
-const IMG_URL =
-  'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0s35S6K3n6U11iGP0yAlwh5XSV8WYSmZGenleDTIR64hoeD-5uoyk7g3Ih5KqY7QQVW_GiUcSZ3h1BiP0wJp6_kPPy_N9JYI8NGCBUho8zhZgXTf3onFvIN3_LYx-K2-7-P6lOGz_igD9yya6tDzPFCGkrzBBjoLvbdJYQ0-jUMjNqPKc4lqnnzS0AGc/s672/Screenshot_20241115-222638_1.jpg'
+const IMG_URL = IMG_SERABI_MIN
 export default html`
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- tittle -->
   <b:if cond='data:blog.pageType == "index"'>
-    <title><data:blog.pageTitle /> | News Tech</title>
+    <title><data:blog.pageTitle /> | <data:blog.metaDescription/></title>
   </b:if>
   <b:if cond="data:view.isSingleItem">
     <title><data:blog.pageName/> | <data:blog.metaDescription/></title>
@@ -50,11 +51,9 @@ export default html`
   <meta content="blog" property="og:type" />
   <b:if cond="data:blog.postImageUrl">
     <meta expr:content="data:blog.postImageUrl" property="og:image" />
-    <link rel="preload" as="image" expr:href="data:blog.postImageUrl" />
     <b:else />
     <b:if cond="data:blog.postImageThumbnailUrl">
       <meta expr:content="data:blog.postThumbnailUrl" property="og:image" />
-      <link rel="preload" as="image" expr:href="data:blog.postThumbnailUrl" />
       <b:else />
       <meta content="${IMG_URL}" property="og:image" /> </b:if
   ></b:if>
