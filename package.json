@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro build",
+    "dev": "DEV_MODE=true astro build",
     "start": "astro dev",
     "lint": "eslint ./src/**/*.ts",
     "build": "astro check && astro build",
@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@muryp/vite-html": "^1.0.6",
+    "@muryp/vite-html": "^1.0.8",
     "@storybook/addon-console": "^3.0.0",
     "astro": "^4.16.12",
     "esbuild": "^0.24.0",
@@ -39,6 +39,7 @@
     "@storybook/react-vite": "^8.3.6",
     "@storybook/test": "^8.4.5",
     "@tailwindcss/typography": "^0.5.15",
+    "@types/html-minifier": "^4.0.5",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "autoprefixer": "^10.4.20",
     "chromatic": "^10.9.6",
@@ -48,6 +49,7 @@
     "eslint-plugin-lit": "^1.15.0",
     "eslint-plugin-lit-a11y": "1.1.0-next.1",
     "globals": "^15.12.0",
+    "html-minifier": "^4.0.0",
     "postcss": "^8.4.49",
     "postcss-import": "^16.1.0",
     "prettier": "^3.3.3",

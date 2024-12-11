@@ -1,0 +1,6 @@
+.skip-link {
+  @apply absolute -top-40 left-0 z-50 btn btn-primary btn-md uppercase;
+  &:focus{
+    @apply top-0;
+  }
+}

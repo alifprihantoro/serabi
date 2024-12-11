@@ -5,9 +5,11 @@ interface TArgs {
   id?: string
   className?: string
   btnAlign?: 'left' | 'right' // default left
+  isH1?: boolean // default h1
 }
 
 export default function heading({
+  isH1,
   content,
   btn,
   title,
@@ -21,14 +23,16 @@ export default function heading({
     className += ' flex-row-reverse'
     btn = html`<span class="mr-3">${btn}</span>`
   }
+  const TAG = isH1 ? 'h1' : 'h2'
   return html`
-    <h2
-      class="text-2xl font-thin flex bg-primary/10 p-3 my-3 justify-start text-primary ${className ||
-      ''}"
+    <${TAG}
+      tabindex="0"
+      class="text-2xl font-thin flex bg-primary/10 p-3
+      my-3 justify-start text-primary ${className || ''}"
       id="${id}">
       <span class="self-center font-bold uppercase mr-auto"> ${title} </span>
       ${btn}
-    </h2>
+    </${TAG}>
     ${content || ''}
   `
 }

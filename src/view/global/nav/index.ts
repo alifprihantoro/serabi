@@ -14,7 +14,7 @@ export default function Nav({ List, url, name, isHome }: TArgs) {
     <div class="md:sticky left-0 top-0 z-50 w-full">
       <div class="navbar bg-primary max-w-4xl md:m-auto">
         <header class="text-white capitalize">
-          ${Link({ name, url, className: 'btn btn-ghost text-xl' })}
+          ${Link({ name, url, className: 'btn btn-ghost text-xl font-GreatFibes' })}
         </header>
         ${NavBottom(List, isHome)}
       </div>

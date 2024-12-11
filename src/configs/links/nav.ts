@@ -62,7 +62,7 @@ export default {
     {
       icon: ICON_MENU,
       name: 'menu',
-      url: '#menu-onsite',
+      url: '/#menu-onsite',
     },
     {
       icon: ICON_BLOG,

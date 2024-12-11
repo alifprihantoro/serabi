@@ -20,19 +20,21 @@ export default async function LoadMoreEvent({
   }
   let CONTENT = prev || ''
 
-  const [NEW_CONTENT, isNext] = await RenderLoadmore(PAGE_NUM,id)
+  const [NEW_CONTENT, isNext] = await RenderLoadmore(PAGE_NUM, id)
   CONTENT = CONTENT + NEW_CONTENT
 
   if (isNext) {
     ElList.innerHTML = CONTENT + btn
-    const ElListBtn = document.getElementById(`${id}-loadmore-btn`)!
-    ElListBtn.onclick = () => {
-      LoadMoreEvent({
-        PAGE_NUM: PAGE_NUM + 1,
-        isMenu,
-        id,
-        btn,
-      })
+    const ElListBtn = document.getElementById(`${id}-loadmore-btn`)
+    if (ElListBtn) {
+      ElListBtn.onclick = () => {
+        LoadMoreEvent({
+          PAGE_NUM: PAGE_NUM + 1,
+          isMenu,
+          id,
+          btn,
+        })
+      }
     }
   } else {
     ElList.innerHTML = CONTENT

@@ -1,5 +1,5 @@
 import '../src/assets/css/main/init.css'
-import '../src/assets/css/fonts.css'
+import '../src/assets/scripts/afterLoad'
 import { withThemeByDataAttribute } from '@storybook/addon-themes'
 import { DocsPage } from '@storybook/addon-docs/blocks'
 

@@ -17,7 +17,8 @@ export default function HomePage({
   heroesArgs,
 }: TArgs) {
   return html`
-    ${Heroes(heroesArgs) + Menu}
+    ${Heroes(heroesArgs)}
+    <div id="main-content">${Menu}</div>
     <div class="md:flex">${About(aboutArgs) + contact(contactArgs)}</div>
   `
 }

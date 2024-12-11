@@ -13,10 +13,10 @@ export default function About(ListOwner: TArgs) {
       <div class="avatar m-3">
         <div
           class="ring-primary ring-offset-base-100 w-24 h-24 rounded-full ring ring-offset-2">
-          <img alt="owner ${name}" src="${img}" />
+          <img tabindex="0" alt="owner ${name}" src="${img}" />
         </div>
         <div class="m-auto ml-3 h-fit !aspect-[0]">
-          <a href="${url}"><h3>${name}</h3></a>
+          <a title="about owner" href="${url}"><h3>${name}</h3></a>
         </div>
       </div>
     `,
