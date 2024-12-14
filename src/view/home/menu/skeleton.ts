@@ -7,7 +7,7 @@ for (let i = 0; i <= 5; i++) {
   cardSkeleton += skeleton
 }
 const LISTS = `${heading({
-  title: 'Menu Makan di Tempat',
+  title: 'Menu di Warung',
   btn:BTN('/#menu-onsite'),
   content:Layouts(cardSkeleton,'menu-onsite'),
 })}<br/>${heading({

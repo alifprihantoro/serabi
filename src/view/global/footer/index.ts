@@ -12,7 +12,7 @@ export default function Footer({ name, links }: TArgs) {
     .join('')
   return html`
     <footer
-      class="footer footer-center bg-primary rounded p-10 text-white max-md:mb-24">
+      class="footer footer-center bg-primary rounded pt-10 pb-32 px-6 text-white">
       <nav class="flex flex-wrap gap-3 justify-center">${LINKS}</nav>
       <p>Copyright &#169; ${Link({ name, url: '/' })} - All right reserved</p>
     </footer>

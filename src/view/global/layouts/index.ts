@@ -10,6 +10,7 @@ type TArgs = {
   isHome?: boolean
   isBlogger?: boolean
 }
+
 export default function ViewLayouts({ childern, isHome, isBlogger }: TArgs) {
   const content = isBlogger
     ? childern
@@ -17,6 +18,9 @@ export default function ViewLayouts({ childern, isHome, isBlogger }: TArgs) {
 
   return html`
     ${tabBtn}
-    <div class="shadow-primary/30 shadow max-w-4xl md:m-auto">${content}</div>
+    <div class="shadow-primary/30 shadow max-w-4xl md:m-auto">
+      ${content}
+      <div id="google-fonts"></div>
+    </div>
   `
 }

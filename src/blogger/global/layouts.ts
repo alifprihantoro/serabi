@@ -28,23 +28,25 @@ export default function BloggerLayouts({
   notFound,
   list,
 }: TArgs) {
-  return ViewLayout({
-    isBlogger: true,
-    childern: html`
-      <b:if cond="data:view.isHomepage">
-        ${Nav({ ...navArgs, isHome: true })}
-        <b:else />
-        ${Nav({ ...navArgs, isHome: false })}
-      </b:if>
-      <b:if cond="data:view.isError">${notFound} </b:if>
-      <b:if cond="data:view.isHomepage"> ${home} </b:if>
-      <b:if cond="data:view.isMultipleItems and !data:view.isHomepage">
-        ${list}
-      </b:if>
-      ${mainEl} ${Footer(footerArgs)}
-      <b:if cond="!data:view.isError"> ${scriptLayouts(LoadmoreScript)} </b:if>
-      <div id="google-fonts"></div>
-      ${scriptLayouts(AfterLoadScript)}
-    `,
-  })
+  return (
+    ViewLayout({
+      isBlogger: true,
+      childern: html`
+        <b:if cond="data:view.isHomepage">
+          ${Nav({ ...navArgs, isHome: true })}
+          <b:else />
+          ${Nav({ ...navArgs, isHome: false })}
+        </b:if>
+        <b:if cond="data:view.isError">${notFound} </b:if>
+        <b:if cond="data:view.isHomepage"> ${home} </b:if>
+        <b:if cond="data:view.isMultipleItems and !data:view.isHomepage">
+          ${list}
+        </b:if>
+        ${mainEl} ${Footer(footerArgs)}
+        <b:if cond="!data:view.isError">
+          ${scriptLayouts(LoadmoreScript)}
+        </b:if>
+      `,
+    }) + scriptLayouts(AfterLoadScript)
+  )
 }
