@@ -7,11 +7,7 @@ export default html`
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- tittle -->
-  <b:if cond='data:blog.pageType == "index"'>
-    <title><data:blog.pageTitle /> | <data:blog.metaDescription/></title>
-  </b:if>
   <b:if cond="data:view.isSingleItem">
-    <title><data:blog.pageName/> | <data:blog.metaDescription/></title>
     <b:elseif cond="data:view.isHomepage" />
     <title><data:blog.title/> | <data:blog.metaDescription/></title>
     <b:elseif cond="data:view.search.label" />

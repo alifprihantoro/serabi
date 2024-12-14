@@ -15,7 +15,7 @@ export default function List({ content, title, contactArgs }: TArgs) {
   return html`
     <div class="my-6 mx-3">
       <div class="md:flex gap-6">
-        <div>${TITLE + content}</div>
+        <div class="w-full">${TITLE + content}</div>
         <div class="max-w-md">${contact(contactArgs)}</div>
       </div>
     </div>

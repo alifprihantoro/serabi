@@ -26,12 +26,13 @@ export default function Card({ img, btn, title }: TArgs) {
   return html`
     <div class="card card-compact w-40 min-w-40 shadow-xl mb-3">
       <figure>
+        <a href="${btn!.url}">
         <img
           tabindex="0"
           class="skeleton h-40 w-40 object-cover"
           loading="lazy"
           src="${img.url}"
-          alt="${img.alt}" />
+          alt="${img.alt}" /></a>
       </figure>
       <div class="card-body">
         <h2 class="card-title text-xs text-wrap" tabindex="0">${title}</h2>

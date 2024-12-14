@@ -60,7 +60,7 @@ const mainEl = MainWidget({
 })
 
 const list = List({
-  title: '<data:post.title />',
+  title: '<div id="title-list"></div>',
   content: `<div id="list-article">${ListLoadmore}</div>`,
   contactArgs,
 })
