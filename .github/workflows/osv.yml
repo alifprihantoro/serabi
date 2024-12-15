@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: "30 12 * * 1"
   push:
-    branches: [master]
+    branches: [deps]
 
 permissions:
   # Require writing security events to upload SARIF file to security tab
