@@ -24,6 +24,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
+      - name: Install deps
+        run: pnpm i
       - name: Install playwright browsers
         run: pnpx playwright install --with-deps
       - name: Run Playwright tests
